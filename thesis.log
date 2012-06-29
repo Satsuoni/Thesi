@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  29 JUN 2012 16:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 JUN 2012 01:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -109,6 +109,36 @@ LaTeX Info: Redefining \] on input line 2667.
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count100
+\c@ALG@rem=\count101
+\c@ALG@nested=\count102
+\ALG@tlm=\skip46
+\ALG@thistlm=\skip47
+\c@ALG@Lnr=\count103
+\c@ALG@blocknr=\count104
+\c@ALG@storecount=\count105
+\c@ALG@tmpcounter=\count106
+\ALG@tmplength=\skip48
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -129,7 +159,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count100
+\Gread@gobject=\count108
 ))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2010/01/09 v3.1m Customizing captions (AR)
@@ -139,7 +169,7 @@ Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks22
 )
 \captionmargin=\dimen112
 \captionmargin@=\dimen113
@@ -148,18 +178,19 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \caption@parindent=\dimen116
 \caption@hangindent=\dimen117
 )
-\c@ContinuedFloat=\count101
+\c@ContinuedFloat=\count109
+Package caption Info: float package is loaded.
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip46
-\f@ncyO@elh=\skip47
-\f@ncyO@erh=\skip48
-\f@ncyO@olh=\skip49
-\f@ncyO@orh=\skip50
-\f@ncyO@elf=\skip51
-\f@ncyO@erf=\skip52
-\f@ncyO@olf=\skip53
-\f@ncyO@orf=\skip54
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
@@ -174,7 +205,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count102
+\babel@savecnt=\count110
 \U@D=\dimen118
 )
 \l@canadian = a dialect from \language\l@american 
@@ -194,10 +225,10 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2009/09/15 v5.5a a miscellany of footnote facilities
-\FN@temptoken=\toks21
+\FN@temptoken=\toks23
 \footnotemargin=\dimen119
-\c@pp@next@reset=\count103
-\c@@fnserial=\count104
+\c@pp@next@reset=\count111
+\c@@fnserial=\count112
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -209,38 +240,33 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip55
-\bibsep=\skip56
+\bibhang=\skip58
+\bibsep=\skip59
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count105
-)
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+\c@NAT@ctr=\count113
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count106
-\mult@box=\box28
+\c@tracingmulticols=\count114
+\mult@box=\box30
 \multicol@leftmargin=\dimen120
-\c@unbalance=\count107
-\c@collectmore=\count108
-\doublecol@number=\count109
-\multicoltolerance=\count110
-\multicolpretolerance=\count111
+\c@unbalance=\count115
+\c@collectmore=\count116
+\doublecol@number=\count117
+\multicoltolerance=\count118
+\multicolpretolerance=\count119
 \full@width=\dimen121
 \page@free=\dimen122
 \premulticols=\dimen123
 \postmulticols=\dimen124
-\multicolsep=\skip57
-\multicolbaselineskip=\skip58
-\partial@page=\box29
-\last@line=\box30
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box31
+\last@line=\box32
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
 \@tempa=\box37
 \@tempa=\box38
 \@tempa=\box39
@@ -256,13 +282,15 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count112
-\c@finalcolumnbadness=\count113
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count120
+\c@finalcolumnbadness=\count121
 \last@try=\dimen125
 \multicolovershoot=\dimen126
 \multicolundershoot=\dimen127
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -275,7 +303,7 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen128
 \nom@tempdim=\dimen129
-\nomitemsep=\skip59
+\nomitemsep=\skip62
 )
 \@nomenclaturefile=\write3
 \openout3 = `thesis.nlo'.
@@ -337,13 +365,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen130
-\Hy@linkcounter=\count114
-\Hy@pagecounter=\count115
+\Hy@linkcounter=\count122
+\Hy@pagecounter=\count123
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count116
+\Hy@SavedSpaceFactor=\count124
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -386,14 +414,14 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count117
+\c@Hy@tempcnt=\count125
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4617.
-\Fld@menulength=\count118
+\Fld@menulength=\count126
 \Field@Width=\dimen131
 \Fld@charsize=\dimen132
 Package hyperref Info: Hyper figures ON on input line 5699.
@@ -405,18 +433,18 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5726.
 Package hyperref Info: PDF/A mode OFF on input line 5731.
 LaTeX Info: Redefining \ref on input line 5771.
 LaTeX Info: Redefining \pageref on input line 5775.
-\Hy@abspage=\count119
-\c@Item=\count120
-\c@Hfootnote=\count121
+\Hy@abspage=\count127
+\c@Item=\count128
+\c@Hfootnote=\count129
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
-\Fld@listcount=\count122
-\c@bookmark@seq@number=\count123
-\Hy@SectionHShift=\skip60
+\Fld@listcount=\count130
+\c@bookmark@seq@number=\count131
+\Hy@SectionHShift=\skip63
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -455,17 +483,17 @@ LaTeX Font Info:    ... okay on input line 84.
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
+\scratchcounter=\count132
 \scratchdimen=\dimen135
-\scratchbox=\box54
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count127
+\scratchbox=\box56
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count135
 \MPscratchDim=\dimen136
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -483,7 +511,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box55
+\AtBeginShipoutBox=\box57
 Package backref Info: ** backref set up for natbib ** on input line 84.
 Package hyperref Info: Link coloring OFF on input line 84.
 
@@ -493,7 +521,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count138
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -504,7 +532,7 @@ LaTeX Info: Redefining \nameref on input line 84.
 \openout5 = `thesis.out'.
 
 
-<0_frontmatter/figures/symbol.jpg, id=112, 315.1775pt x 312.16624pt>
+<0_frontmatter/figures/symbol.jpg, id=144, 315.1775pt x 312.16624pt>
 File: 0_frontmatter/figures/symbol.jpg Graphic file (type jpg)
 
 <use 0_frontmatter/figures/symbol.jpg>
@@ -570,7 +598,7 @@ l.15 \end{acknowledgements}
 me{page.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 ...3}Two-step SVM description}{15}{chapter.3}
+l.24 ...roposed two-step algorithm}{17}{chapter.3}
                                                    [3
 \FN@pp@footnotehinttrue 
 
@@ -653,45 +681,37 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 ]
  3.
-
-LaTeX Warning: Reference `PrimalLinear' on page 17 undefined on input line 8.
-
-
-Package natbib Warning: Citation `OnlineBoost' on page 17 undefined on input li
-ne 8.
-
-) [17]
+[17] [18] [19]
+\@float@every@figure=\toks26
+ [20] [21] [22]) [23]
 \openout2 = `4/tracking.aux'.
 
- (./4/tracking.tex [18
+ (./4/tracking.tex [24
 
 
 
 ]
  4.
-) [19]
+) [25]
 \openout2 = `5/evaluation.aux'.
 
- (./5/evaluation.tex [20
+ (./5/evaluation.tex [26
 
 
 
 ]
  5.
-) [21]
+) [27]
 \openout2 = `6/Conclusion.aux'.
 
- (./6/Conclusion.tex [22
+ (./6/Conclusion.tex [28
 
 
 
 ]
  6.
-) [23]
+) [29]
 No file thesis.bbl.
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 (./thesis.aux (./0_frontmatter/abstract.aux) (./0_frontmatter/dedication.aux)
@@ -701,7 +721,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E0EFC8B2A37DB0A4EEBA6E76E142A0C7;1946.
+(rerunfilecheck)             Checksum: FE23D3F39B53225D3254F50855D65AB1;2731.
 
 
 LaTeX Warning: There were undefined references.
@@ -713,33 +733,35 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
 ### simple group (level 1) entered at line 65 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8485 strings out of 493633
- 124780 string characters out of 3143378
- 228408 words of memory out of 3000000
- 11490 multiletter control sequences out of 15000+200000
- 13511 words of font info for 51 fonts, out of 3000000 for 9000
+ 9039 strings out of 493633
+ 132765 string characters out of 3143378
+ 238851 words of memory out of 3000000
+ 12013 multiletter control sequences out of 15000+200000
+ 17022 words of font info for 67 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 43i,12n,46p,1327b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,46p,1247b,505s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on thesis.pdf (35 pages, 247283 bytes).
+mi7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
+cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on thesis.pdf (41 pages, 283892 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
