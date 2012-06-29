@@ -1,0 +1,31 @@
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- name of chapter  -------------------------
+\chapter{Two-step SVM description} % top level followed by section, subsection
+\section{Resulting Algorithm}
+
+Using the above similarity, we separate the boosting process into two phases: the training of each successful weak classifier, and adjusting the boosting weights that combine weak classifiers into a strong one. Both phases can then be cast as a primal SVM problem, same as Eq. \ref{PrimalLinear}, with the difference that in phase 1 (weak classifier training) each sample is weighted according to the result provided by the current strong classifier. To reduce the amount of calculations, we have chosen the loss function for the strong classifier $H$, $l_H$, as a weight although other weighting solutions are possible. Also unlike \cite{OnlineBoost}, we only train the last weak classifier of the set rather than all of them. The reason for this is that fixing parameters of all classifiers previously added  increases the accuracy of the error rate estimation for the training of additional classifier,  as well as significantly decreasing the amount of calculations needed for a single update. We choose the cutoff criteria, based either on the drop of estimated error rate of the weak classifier or the number of iterations the weak classifier was trained, after which the weights of the weak classifier are fixed, and the next classifier is added and begins training.
+We use the following notation for our algorithm:
+
+%: ----------------------- paths to graphics ------------------------
+
+% change according to folder and file names
+\ifpdf
+    \graphicspath{{X/figures/PNG/}{X/figures/PDF/}{X/figures/}}
+\else
+    \graphicspath{{X/figures/EPS/}{X/figures/}}
+\fi
+
+%: ----------------------- contents from here ------------------------
+
+
+
+
+
+
+
+% ---------------------------------------------------------------------------
+%: ----------------------- end of thesis sub-document ------------------------
+% ---------------------------------------------------------------------------
+
