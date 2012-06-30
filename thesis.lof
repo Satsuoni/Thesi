@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Pegasos algorithm with weighted samples. Parameters: $\mathaccentV {vec}17E{w}$ - weight vector for the linear SVM, $\lambda $ - regularization parameter, $\mathaccentV {vec}17E{x}$ -input training sample, $y$ - training label, $t_w$ - number of current iteration for weak classifier, $c$ - weight parameter \relax }}{20}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Pegasos algorithm with weighted samples}}{20}{figure.3.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

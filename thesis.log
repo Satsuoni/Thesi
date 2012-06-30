@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 JUN 2012 01:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  1 JUL 2012 01:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,7 +532,7 @@ LaTeX Info: Redefining \nameref on input line 84.
 \openout5 = `thesis.out'.
 
 
-<0_frontmatter/figures/symbol.jpg, id=144, 315.1775pt x 312.16624pt>
+<0_frontmatter/figures/symbol.jpg, id=205, 315.1775pt x 312.16624pt>
 File: 0_frontmatter/figures/symbol.jpg Graphic file (type jpg)
 
 <use 0_frontmatter/figures/symbol.jpg>
@@ -692,25 +692,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 ]
  4.
-) [25]
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]) [36]
 \openout2 = `5/evaluation.aux'.
 
- (./5/evaluation.tex [26
+
+(./5/evaluation.tex
+ 5.
+) [37
 
 
 
 ]
- 5.
-) [27]
 \openout2 = `6/Conclusion.aux'.
 
- (./6/Conclusion.tex [28
+ (./6/Conclusion.tex [38
 
 
 
 ]
  6.
-) [29]
+) [39]
 No file thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
@@ -721,7 +722,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FE23D3F39B53225D3254F50855D65AB1;2731.
+(rerunfilecheck)             Checksum: 2E2424BE460202C6DBD21E63737CD7AE;3949.
 
 
 LaTeX Warning: There were undefined references.
@@ -733,13 +734,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
 ### simple group (level 1) entered at line 65 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9039 strings out of 493633
- 132765 string characters out of 3143378
- 238851 words of memory out of 3000000
- 12013 multiletter control sequences out of 15000+200000
+ 9097 strings out of 493633
+ 133395 string characters out of 3143378
+ 238634 words of memory out of 3000000
+ 12028 multiletter control sequences out of 15000+200000
  17022 words of font info for 67 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 43i,12n,46p,1247b,505s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,46p,1247b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
@@ -758,10 +759,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/l
 ocal/texlive/2011/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on thesis.pdf (41 pages, 283892 bytes).
+Output written on thesis.pdf (51 pages, 315413 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

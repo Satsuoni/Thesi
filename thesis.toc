@@ -32,5 +32,20 @@
 \contentsline {subsection}{\numberline {3.2.2}Possible modifications}{22}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Comparison to other algorithms}{23}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Application of proposed method to object tracking on a mobile device}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}Evaluation of related algorithms}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}
+\contentsline {section}{\numberline {4.1}Resources available on the mobile device: iPhone 4S}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Overview}{25}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}General-purpose computing on graphics processing units}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Open GL ES programmable graphic pipeline}{27}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}GPUImage programming library}{28}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Limitations}{29}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Modification of Pegasos algorithm for parallel processing}{30}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Modification description}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Evaluation}{31}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Simple local image features}{31}{section.4.4}
+\contentsline {section}{\numberline {4.5}Tracking}{32}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Training regime}{33}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Position estimation}{33}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Resulting Application layout}{34}{section.4.6}
+\contentsline {section}{\numberline {4.7}Results overview}{35}{section.4.7}
+\contentsline {chapter}{\numberline {5}Evaluation of related algorithms}{37}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}

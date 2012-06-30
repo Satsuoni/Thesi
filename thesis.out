@@ -31,5 +31,20 @@
 \BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Possible modifications}{section.3.2}% 31
 \BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Comparison to other algorithms}{section.3.2}% 32
 \BOOKMARK [0][]{chapter.4}{4 Application of proposed method to object tracking on a mobile device}{}% 33
-\BOOKMARK [0][]{chapter.5}{5 Evaluation of related algorithms}{}% 34
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 35
+\BOOKMARK [1][]{section.4.1}{4.1 Resources available on the mobile device: iPhone 4S}{chapter.4}% 34
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Overview}{section.4.1}% 35
+\BOOKMARK [1][]{section.4.2}{4.2 General-purpose computing on graphics processing units}{chapter.4}% 36
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Open GL ES programmable graphic pipeline}{section.4.2}% 37
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 GPUImage programming library}{section.4.2}% 38
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Limitations}{section.4.2}% 39
+\BOOKMARK [1][]{section.4.3}{4.3 Modification of Pegasos algorithm for parallel processing}{chapter.4}% 40
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Modification description}{section.4.3}% 41
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Evaluation}{section.4.3}% 42
+\BOOKMARK [1][]{section.4.4}{4.4 Simple local image features}{chapter.4}% 43
+\BOOKMARK [1][]{section.4.5}{4.5 Tracking}{chapter.4}% 44
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Training regime}{section.4.5}% 45
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Position estimation}{section.4.5}% 46
+\BOOKMARK [1][]{section.4.6}{4.6 Resulting Application layout}{chapter.4}% 47
+\BOOKMARK [1][]{section.4.7}{4.7 Results overview}{chapter.4}% 48
+\BOOKMARK [0][]{chapter.5}{5 Evaluation of related algorithms}{}% 49
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 50
