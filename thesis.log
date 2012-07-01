@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  2 JUL 2012 05:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  2 JUL 2012 05:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -763,20 +763,16 @@ File: 3/figures/resultApp.jpg Graphic file (type jpg)
 <use 3/figures/resultApp.jpg>
 Package pdftex.def Info: 3/figures/resultApp.jpg used on input line 31.
 (pdftex.def)             Requested size: 167.08653pt x 150.02362pt.
-
-
-LaTeX Warning: Reference `Approx' on page 17 undefined on input line 40.
-
-[17] [18 <./3/figures/NORMAOursGrowth.jpg>] [19 <./3/figures/Target.jpg> <./3/f
-igures/resultApp.jpg>]
-<3/figures/linearsample2.jpg, id=594, 579.16376pt x 431.6125pt>
+ [17] [18 <./3/figures/NORMAOursGrowth.jpg>]
+[19 <./3/figures/Target.jpg> <./3/figures/resultApp.jpg>]
+<3/figures/linearsample2.jpg, id=595, 579.16376pt x 431.6125pt>
 File: 3/figures/linearsample2.jpg Graphic file (type jpg)
 
 <use 3/figures/linearsample2.jpg>
 Package pdftex.def Info: 3/figures/linearsample2.jpg used on input line 67.
 (pdftex.def)             Requested size: 247.54149pt x 184.47673pt.
  [20]
-<3/figures/OurmethodTrain.jpg, id=604, 815.045pt x 568.1225pt>
+<3/figures/OurmethodTrain.jpg, id=605, 815.045pt x 568.1225pt>
 File: 3/figures/OurmethodTrain.jpg Graphic file (type jpg)
 
 <use 3/figures/OurmethodTrain.jpg>
@@ -785,31 +781,31 @@ Package pdftex.def Info: 3/figures/OurmethodTrain.jpg used on input line 76.
 \@float@every@figure=\toks26
  [21 <./3/figures/linearsample2.jpg>]
 [22 <./3/figures/OurmethodTrain.jpg>]
-<3/figures/c1.jpg, id=621, 562.1pt x 421.575pt>
+<3/figures/c1.jpg, id=622, 562.1pt x 421.575pt>
 File: 3/figures/c1.jpg Graphic file (type jpg)
  <use 3/figures/c1.jpg>
 Package pdftex.def Info: 3/figures/c1.jpg used on input line 128.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/c2.jpg, id=622, 562.1pt x 421.575pt>
+<3/figures/c2.jpg, id=623, 562.1pt x 421.575pt>
 File: 3/figures/c2.jpg Graphic file (type jpg)
  <use 3/figures/c2.jpg>
 Package pdftex.def Info: 3/figures/c2.jpg used on input line 134.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/l1.jpg, id=623, 562.1pt x 421.575pt>
+<3/figures/l1.jpg, id=624, 562.1pt x 421.575pt>
 File: 3/figures/l1.jpg Graphic file (type jpg)
  <use 3/figures/l1.jpg>
 Package pdftex.def Info: 3/figures/l1.jpg used on input line 141.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/l2.jpg, id=624, 562.1pt x 421.575pt>
+<3/figures/l2.jpg, id=625, 562.1pt x 421.575pt>
 File: 3/figures/l2.jpg Graphic file (type jpg)
  <use 3/figures/l2.jpg>
 Package pdftex.def Info: 3/figures/l2.jpg used on input line 147.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
  [23]
-<3/figures/losses.jpg, id=632, 356.65245pt x 236.68425pt>
+<3/figures/losses.jpg, id=633, 356.65245pt x 236.68425pt>
 File: 3/figures/losses.jpg Graphic file (type jpg)
 
 <use 3/figures/losses.jpg>
@@ -822,7 +818,7 @@ s/l2.jpg>] [25 <./3/figures/losses.jpg>]) [26]
 
 (./4/tracking.tex
  4.
-<4/figures/iphone4s.jpg, id=652, 602.25pt x 499.8675pt>
+<4/figures/iphone4s.jpg, id=653, 602.25pt x 499.8675pt>
 File: 4/figures/iphone4s.jpg Graphic file (type jpg)
 
 <use 4/figures/iphone4s.jpg>
@@ -833,65 +829,65 @@ Package pdftex.def Info: 4/figures/iphone4s.jpg used on input line 17.
 
 
 ] [28 <./4/figures/iphone4s.jpg>] [29]
-<4/figures/glespipe.jpg, id=667, 934.49126pt x 503.8825pt>
+<4/figures/glespipe.jpg, id=668, 934.49126pt x 503.8825pt>
 File: 4/figures/glespipe.jpg Graphic file (type jpg)
 
 <use 4/figures/glespipe.jpg>
 Package pdftex.def Info: 4/figures/glespipe.jpg used on input line 46.
 (pdftex.def)             Requested size: 288.7942pt x 155.71758pt.
  [30 <./4/figures/glespipe.jpg>]
-<4/figures/GPUScheme.jpg, id=673, 539.01375pt x 355.3275pt>
+<4/figures/GPUScheme.jpg, id=674, 539.01375pt x 355.3275pt>
 File: 4/figures/GPUScheme.jpg Graphic file (type jpg)
 
 <use 4/figures/GPUScheme.jpg>
 Package pdftex.def Info: 4/figures/GPUScheme.jpg used on input line 58.
 (pdftex.def)             Requested size: 288.7942pt x 190.37755pt.
  [31 <./4/figures/GPUScheme.jpg>] [32]
-<4/figures/pyrapega.jpg, id=684, 617.30624pt x 508.90125pt>
+<4/figures/pyrapega.jpg, id=685, 617.30624pt x 508.90125pt>
 File: 4/figures/pyrapega.jpg Graphic file (type jpg)
 
 <use 4/figures/pyrapega.jpg>
 Package pdftex.def Info: 4/figures/pyrapega.jpg used on input line 103.
 (pdftex.def)             Requested size: 288.7942pt x 238.08096pt.
  [33] [34 <./4/figures/pyrapega.jpg>] [35] [36]
-<4/figures/tracking.jpg, id=721, 549.05125pt x 756.8275pt>
+<4/figures/tracking.jpg, id=722, 549.05125pt x 756.8275pt>
 File: 4/figures/tracking.jpg Graphic file (type jpg)
 
 <use 4/figures/tracking.jpg>
 Package pdftex.def Info: 4/figures/tracking.jpg used on input line 152.
 (pdftex.def)             Requested size: 371.30594pt x 511.82967pt.
  [37] [38]
-<4/figures/conf1.jpg, id=742, 481.8pt x 481.8pt>
+<4/figures/conf1.jpg, id=743, 481.8pt x 481.8pt>
 File: 4/figures/conf1.jpg Graphic file (type jpg)
  <use 4/figures/conf1.jpg>
 Package pdftex.def Info: 4/figures/conf1.jpg used on input line 176.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/conf2.jpg, id=743, 481.8pt x 481.8pt>
+<4/figures/conf2.jpg, id=744, 481.8pt x 481.8pt>
 File: 4/figures/conf2.jpg Graphic file (type jpg)
  <use 4/figures/conf2.jpg>
 Package pdftex.def Info: 4/figures/conf2.jpg used on input line 182.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/track1.jpg, id=744, 481.8pt x 481.8pt>
+<4/figures/track1.jpg, id=745, 481.8pt x 481.8pt>
 File: 4/figures/track1.jpg Graphic file (type jpg)
  <use 4/figures/track1.jpg>
 Package pdftex.def Info: 4/figures/track1.jpg used on input line 189.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/track2.jpg, id=745, 481.8pt x 481.8pt>
+<4/figures/track2.jpg, id=746, 481.8pt x 481.8pt>
 File: 4/figures/track2.jpg Graphic file (type jpg)
  <use 4/figures/track2.jpg>
 Package pdftex.def Info: 4/figures/track2.jpg used on input line 195.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/tls1.jpg, id=746, 481.8pt x 481.8pt>
+<4/figures/tls1.jpg, id=747, 481.8pt x 481.8pt>
 File: 4/figures/tls1.jpg Graphic file (type jpg)
  <use 4/figures/tls1.jpg>
 Package pdftex.def Info: 4/figures/tls1.jpg used on input line 201.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/tls2.jpg, id=747, 481.8pt x 481.8pt>
+<4/figures/tls2.jpg, id=748, 481.8pt x 481.8pt>
 File: 4/figures/tls2.jpg Graphic file (type jpg)
  <use 4/figures/tls2.jpg>
 Package pdftex.def Info: 4/figures/tls2.jpg used on input line 207.
@@ -916,84 +912,84 @@ LaTeX Warning: Reference `Exact' on page 44 undefined on input line 38.
 
 LaTeX Warning: Reference `moving' on page 45 undefined on input line 42.
 
-<5/figures/PN_Lin_Lin.jpg, id=806, 483.8075pt x 379.4175pt>
+<5/figures/PN_Lin_Lin.jpg, id=807, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Lin_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Lin_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Lin_Lin.jpg used on input line 47.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Noise_Lin.jpg, id=807, 483.8075pt x 379.4175pt>
+<5/figures/PN_Noise_Lin.jpg, id=808, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Noise_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Noise_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Noise_Lin.jpg used on input line 53.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Bayess_Lin.jpg, id=808, 483.8075pt x 379.4175pt>
+<5/figures/PN_Bayess_Lin.jpg, id=809, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Bayess_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Bayess_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Bayess_Lin.jpg used on input line 60.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Move_Lin.jpg, id=809, 483.8075pt x 379.4175pt>
+<5/figures/PN_Move_Lin.jpg, id=810, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Move_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Move_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Move_Lin.jpg used on input line 66.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Switch_Lin.jpg, id=810, 483.8075pt x 379.4175pt>
+<5/figures/PN_Switch_Lin.jpg, id=811, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Switch_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Switch_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Switch_Lin.jpg used on input line 72.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Cov_Lin.jpg, id=811, 483.8075pt x 379.4175pt>
+<5/figures/PN_Cov_Lin.jpg, id=812, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Cov_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Cov_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Cov_Lin.jpg used on input line 78.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Lin_Gauss.jpg, id=812, 483.8075pt x 379.4175pt>
+<5/figures/PN_Lin_Gauss.jpg, id=813, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Lin_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Lin_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Lin_Gauss.jpg used on input line 89.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Noise_Gauss.jpg, id=813, 483.8075pt x 379.4175pt>
+<5/figures/PN_Noise_Gauss.jpg, id=814, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Noise_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Noise_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Noise_Gauss.jpg used on input line 95.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Bayess_Gauss.jpg, id=814, 483.8075pt x 379.4175pt>
+<5/figures/PN_Bayess_Gauss.jpg, id=815, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Bayess_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Bayess_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Bayess_Gauss.jpg used on input line 102.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Move_Gauss.jpg, id=815, 483.8075pt x 379.4175pt>
+<5/figures/PN_Move_Gauss.jpg, id=816, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Move_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Move_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Move_Gauss.jpg used on input line 108.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Switch_Gauss.jpg, id=816, 483.8075pt x 379.4175pt>
+<5/figures/PN_Switch_Gauss.jpg, id=817, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Switch_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Switch_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Switch_Gauss.jpg used on input line 114.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Cov_Gauss.jpg, id=817, 483.8075pt x 379.4175pt>
+<5/figures/PN_Cov_Gauss.jpg, id=818, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Cov_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Cov_Gauss.jpg>
@@ -1013,20 +1009,20 @@ Overfull \hbox (6.018pt too wide) in paragraph at lines 137--137
 Underfull \vbox (badness 3536) has occurred while \output is active []
 
  [45]
-<5/figures/adas.jpg, id=823, 449.5194pt x 338.2236pt>
+<5/figures/adas.jpg, id=824, 449.5194pt x 338.2236pt>
 File: 5/figures/adas.jpg Graphic file (type jpg)
  <use 5/figures/adas.jpg>
 Package pdftex.def Info: 5/figures/adas.jpg used on input line 153.
 (pdftex.def)             Requested size: 167.08653pt x 125.71362pt.
 
-<5/figures/adaab.jpg, id=824, 449.5194pt x 338.2236pt>
+<5/figures/adaab.jpg, id=825, 449.5194pt x 338.2236pt>
 File: 5/figures/adaab.jpg Graphic file (type jpg)
 
 <use 5/figures/adaab.jpg>
 Package pdftex.def Info: 5/figures/adaab.jpg used on input line 159.
 (pdftex.def)             Requested size: 167.08653pt x 125.71362pt.
 
-<5/figures/odas.jpg, id=827, 449.5194pt x 338.2236pt>
+<5/figures/odas.jpg, id=828, 449.5194pt x 338.2236pt>
 File: 5/figures/odas.jpg Graphic file (type jpg)
  <use 5/figures/odas.jpg>
 Package pdftex.def Info: 5/figures/odas.jpg used on input line 172.
@@ -1079,10 +1075,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
- 9742 strings out of 493633
- 143501 string characters out of 3143378
+ 9741 strings out of 493633
+ 143493 string characters out of 3143378
  266255 words of memory out of 3000000
- 12516 multiletter control sequences out of 15000+200000
+ 12515 multiletter control sequences out of 15000+200000
  17993 words of font info for 70 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  43i,13n,46p,1260b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1108,10 +1104,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on thesis.pdf (69 pages, 2290716 bytes).
+Output written on thesis.pdf (69 pages, 2290758 bytes).
 PDF statistics:
- 1064 PDF objects out of 1200 (max. 8388607)
- 923 compressed objects within 10 object streams
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 924 compressed objects within 10 object streams
  232 named destinations out of 1000 (max. 500000)
  647 words of extra memory for PDF output out of 10000 (max. 10000000)
 
