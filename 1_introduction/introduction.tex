@@ -40,7 +40,7 @@ On the othe hand, boosting algorithm for aggregating several simple classifiers 
 
 {\bf Our Goal} In this thesis we aim to bridge the gap between boosting and online SVM learning by exploiting the simolarities between both that allow us to introduce a new boosting algorithm based on two-step SVM training. The proposed algorithm allows for greater flexibility, and has smaller computational costs than traditional kernel-based methods while achieving similar or greater accuracy. To our knowledge this is the first such algorithm proposed. 
 
-{\bf Contrbitions} Our contributions in this paper, are therefore as follows. First we propose a new learning method and compare it against existing methods in terms of accuracy and computational complexity, as well as proposing several variations of the method useable for various applications. Then, we introduce a specific application of the descibed method to the task of video tracking on the mobile device. We show that reduced computational costs of our method, as well as highly parallel processing on the device's GPU allows such complex applications to run in the real time. Also, for this application a new set of simple features is introduced and evaluated.
+{\bf Contrbitions} Our contributions in this paper, are therefore as follows. First we propose a new learning method and compare it against existing methods in terms of accuracy and computational complexity, as well as proposing several variations of the method useable for various applications. Then, we introduce a specific application of the descibed method to the task of video tracking on the mobile device to demontrate feasibiity of the method in a practical application. We show that reduced computational costs of our method, as well as highly parallel processing on the device's GPU allows such complex applications to run in the real time. Also, for this application a new set of simple features is introduced and evaluated.
 
 \section{Overview of common methods} % subsection headings are again smaller than section names
 % lead
@@ -55,14 +55,19 @@ As mentioned above, the algorithm introduced in this paper is based partly on ne
 
 \section{Algorithm outline}
 
-Our algorithm takes at its basis the offline Adaboost algorithm and transfers it to online setting by utilizing its similarity to the SVM formulation. 
-
+Our algorithm takes at its basis the offline Adaboost algorithm and transfers it to online setting by utilizing its similarity to the SVM formulation. The addition of the weak classifier that requires minimization of the weighted error rate ove the field of available classifiers in AdaBoost is replaced by iterative updates in the form of Pegasos algorithm applied over several data inputs. To reflect the changing parameters of the distribution, the boosting weights themselves are updated in the similar fashion.  The algorithm is described in detail in Chapter \ref{OurMethod}. 
 \section{Possible applications}
-In the introduction, we briefly state the need and motivation of our research. We describe the current state of the art techniques for the SVM training and boosting, and show some of their drawback that we aim to address by introducing our method. We then briefly outline our algorithm and its relation to the previously described algorithms. We further describe possible applications of our algorithm, particularly in the field of image processing.
+
+The method introduced in this thesis is a generic online learning method applicable to a wide range of problems, which it shared with other methods in the same area.  Two of the example applications include:
+
+{\bf Tracking model changes}
+Our proposed algorithm can be used to create and contniuosly update a model changing in time, such as an object model in the tracking applcation, as mentioned in {{=ref=}}.
+
+{\bf Dealing with data with nonlinear distributions}
+Many data acquisition tasks produce data that is not linearly separable into two classes. While kernel-based methods can be applied to the task of classifying such data, they often fail when the kernel  function and its parameters are not chosen well. Our method, however can be applied to arbitrary distribution, as the parameters have minimal imact on the resulting accuracy. 
 
 
 
-% dextran, starch, glycogen
 
 
 %: ----------------------- HELP: special characters

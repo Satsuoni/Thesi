@@ -5,4 +5,6 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The Pegasos algorithm with weighted samples}}{20}{figure.3.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental results comparing the performance of our algorithm to linear implementation of Pegasos and NORMA\relax }}{42}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Experimental results comparing the performance of our algorithm implementation of Pegasos and NORMA using Gaussian RBF\relax }}{43}{figure.5.2}
 \addvspace {10\p@ }

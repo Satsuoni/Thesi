@@ -46,5 +46,9 @@
 \BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Position estimation}{section.4.5}% 46
 \BOOKMARK [1][]{section.4.6}{4.6 Resulting Application layout}{chapter.4}% 47
 \BOOKMARK [1][]{section.4.7}{4.7 Results overview}{chapter.4}% 48
-\BOOKMARK [0][]{chapter.5}{5 Evaluation of related algorithms}{}% 49
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 50
+\BOOKMARK [0][]{chapter.5}{5 Evaluation of our algorithm in comparison to related algorithms}{}% 49
+\BOOKMARK [1][]{section.5.1}{5.1 Comparison to online SVM training algorithms: Pegasos and NORMA}{chapter.5}% 50
+\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Experimental results}{section.5.1}% 51
+\BOOKMARK [1][]{section.5.2}{5.2 Comparison to offline algorithm: AdaBoost}{chapter.5}% 52
+\BOOKMARK [1][]{section.5.3}{5.3 Comparison to the online AdaBoost}{chapter.5}% 53
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 54

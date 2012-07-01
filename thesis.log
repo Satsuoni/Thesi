@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  1 JUL 2012 01:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  1 JUL 2012 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -181,6 +181,11 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \c@ContinuedFloat=\count109
 Package caption Info: float package is loaded.
 )
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count110
+\c@subtable=\count111
+)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
@@ -205,7 +210,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count110
+\babel@savecnt=\count112
 \U@D=\dimen118
 )
 \l@canadian = a dialect from \language\l@american 
@@ -227,8 +232,8 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 Package: footmisc 2009/09/15 v5.5a a miscellany of footnote facilities
 \FN@temptoken=\toks23
 \footnotemargin=\dimen119
-\c@pp@next@reset=\count111
-\c@@fnserial=\count112
+\c@pp@next@reset=\count113
+\c@@fnserial=\count114
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -243,18 +248,18 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip58
 \bibsep=\skip59
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count115
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count114
+\c@tracingmulticols=\count116
 \mult@box=\box30
 \multicol@leftmargin=\dimen120
-\c@unbalance=\count115
-\c@collectmore=\count116
-\doublecol@number=\count117
-\multicoltolerance=\count118
-\multicolpretolerance=\count119
+\c@unbalance=\count117
+\c@collectmore=\count118
+\doublecol@number=\count119
+\multicoltolerance=\count120
+\multicolpretolerance=\count121
 \full@width=\dimen121
 \page@free=\dimen122
 \premulticols=\dimen123
@@ -284,8 +289,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count120
-\c@finalcolumnbadness=\count121
+\c@columnbadness=\count122
+\c@finalcolumnbadness=\count123
 \last@try=\dimen125
 \multicolovershoot=\dimen126
 \multicolundershoot=\dimen127
@@ -365,13 +370,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen130
-\Hy@linkcounter=\count122
-\Hy@pagecounter=\count123
+\Hy@linkcounter=\count124
+\Hy@pagecounter=\count125
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count124
+\Hy@SavedSpaceFactor=\count126
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -414,14 +419,14 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count125
+\c@Hy@tempcnt=\count127
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4617.
-\Fld@menulength=\count126
+\Fld@menulength=\count128
 \Field@Width=\dimen131
 \Fld@charsize=\dimen132
 Package hyperref Info: Hyper figures ON on input line 5699.
@@ -433,17 +438,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5726.
 Package hyperref Info: PDF/A mode OFF on input line 5731.
 LaTeX Info: Redefining \ref on input line 5771.
 LaTeX Info: Redefining \pageref on input line 5775.
-\Hy@abspage=\count127
-\c@Item=\count128
-\c@Hfootnote=\count129
+\Hy@abspage=\count129
+\c@Item=\count130
+\c@Hfootnote=\count131
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
-\Fld@listcount=\count130
-\c@bookmark@seq@number=\count131
+\Fld@listcount=\count132
+\c@bookmark@seq@number=\count133
 \Hy@SectionHShift=\skip63
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -483,16 +488,16 @@ LaTeX Font Info:    ... okay on input line 84.
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
+\scratchcounter=\count134
 \scratchdimen=\dimen135
 \scratchbox=\box56
-\nofMPsegments=\count133
-\nofMParguments=\count134
+\nofMPsegments=\count135
+\nofMParguments=\count136
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count135
+\MPscratchCnt=\count137
 \MPscratchDim=\dimen136
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -521,7 +526,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count138
+\c@section@level=\count140
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -532,7 +537,7 @@ LaTeX Info: Redefining \nameref on input line 84.
 \openout5 = `thesis.out'.
 
 
-<0_frontmatter/figures/symbol.jpg, id=205, 315.1775pt x 312.16624pt>
+<0_frontmatter/figures/symbol.jpg, id=221, 315.1775pt x 312.16624pt>
 File: 0_frontmatter/figures/symbol.jpg Graphic file (type jpg)
 
 <use 0_frontmatter/figures/symbol.jpg>
@@ -603,34 +608,34 @@ l.24 ...roposed two-step algorithm}{17}{chapter.3}
 \FN@pp@footnotehinttrue 
 
 
-])
+]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 ...{\numberline {6}Conclusion}{45}{chapter.6}
+                                                   [4])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \listoffigures
-                    	% print list of figures [4] (./thesis.lof)
+ [5] [6
+
+] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [5
 
-] [6
+[7] [8
 
-]
-(./thesis.lot)
+] (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [7]
+ [9]
 \openout2 = `0_frontmatter/glossary.aux'.
 
  (./0_frontmatter/glossary.tex)
 No file thesis.nls.
-[8
+[10
 
 
 \FN@pp@footnotehinttrue 
@@ -644,16 +649,16 @@ No file thesis.nls.
 [1
 
 
-] [2]) [3]
+] [2] [3]) [4]
 \openout2 = `2/related.aux'.
 
- (./2/related.tex [4
-
-
-
-]
+ (./2/related.tex
  2.
-[5] [6] [7] [8] [9]
+[5
+
+
+
+] [6] [7] [8] [9]
 LaTeX Font Info:    Try loading font information for U+euf on input line 104.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -698,21 +703,146 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 (./5/evaluation.tex
  5.
-) [37
+
+Package natbib Warning: Citation `Norma' on page 37 undefined on input line 28.
+
+
+[37
 
 
 
 ]
+
+Package natbib Warning: Citation `Norma' on page 38 undefined on input line 30.
+
+
+
+LaTeX Warning: Reference `Exact' on page 38 undefined on input line 38.
+
+[38]
+
+Package natbib Warning: Citation `Forest' on page 39 undefined on input line 40
+.
+
+
+LaTeX Warning: Reference `moving' on page 39 undefined on input line 42.
+
+<5/figures/PN_Lin_Lin.jpg, id=584, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Lin_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Lin_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Lin_Lin.jpg used on input line 47.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Noise_Lin.jpg, id=585, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Noise_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Noise_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Noise_Lin.jpg used on input line 53.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Bayess_Lin.jpg, id=586, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Bayess_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Bayess_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Bayess_Lin.jpg used on input line 60.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Move_Lin.jpg, id=587, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Move_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Move_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Move_Lin.jpg used on input line 66.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Switch_Lin.jpg, id=588, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Switch_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Switch_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Switch_Lin.jpg used on input line 72.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Cov_Lin.jpg, id=589, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Cov_Lin.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Cov_Lin.jpg>
+Package pdftex.def Info: 5/figures/PN_Cov_Lin.jpg used on input line 78.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Lin_Gauss.jpg, id=590, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Lin_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Lin_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Lin_Gauss.jpg used on input line 89.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Noise_Gauss.jpg, id=591, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Noise_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Noise_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Noise_Gauss.jpg used on input line 95.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Bayess_Gauss.jpg, id=592, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Bayess_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Bayess_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Bayess_Gauss.jpg used on input line 102.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Move_Gauss.jpg, id=593, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Move_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Move_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Move_Gauss.jpg used on input line 108.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Switch_Gauss.jpg, id=594, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Switch_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Switch_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Switch_Gauss.jpg used on input line 114.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+<5/figures/PN_Cov_Gauss.jpg, id=595, 483.8075pt x 379.4175pt>
+File: 5/figures/PN_Cov_Gauss.jpg Graphic file (type jpg)
+
+<use 5/figures/PN_Cov_Gauss.jpg>
+Package pdftex.def Info: 5/figures/PN_Cov_Gauss.jpg used on input line 120.
+(pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
+
+Overfull \hbox (3.85843pt too wide) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/10.95 Switching| 
+ []
+
+
+Overfull \hbox (6.018pt too wide) in paragraph at lines 137--137
+[]\OT1/cmr/m/n/10.95 Covertype| 
+ []
+
+
+Underfull \vbox (badness 3536) has occurred while \output is active []
+
+ [39]
+[40]) [41] [42 <./5/figures/PN_Lin_Lin.jpg> <./5/figures/PN_Noise_Lin.jpg> <./5
+/figures/PN_Bayess_Lin.jpg> <./5/figures/PN_Move_Lin.jpg> <./5/figures/PN_Switc
+h_Lin.jpg> <./5/figures/PN_Cov_Lin.jpg>] [43 <./5/figures/PN_Lin_Gauss.jpg> <./
+5/figures/PN_Noise_Gauss.jpg> <./5/figures/PN_Bayess_Gauss.jpg> <./5/figures/PN
+_Move_Gauss.jpg> <./5/figures/PN_Switch_Gauss.jpg> <./5/figures/PN_Cov_Gauss.jp
+g>]
 \openout2 = `6/Conclusion.aux'.
 
- (./6/Conclusion.tex [38
+ (./6/Conclusion.tex [44
 
 
 
 ]
  6.
-) [39]
+) [45] [46]
 No file thesis.bbl.
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 (./thesis.aux (./0_frontmatter/abstract.aux) (./0_frontmatter/dedication.aux)
@@ -722,7 +852,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2E2424BE460202C6DBD21E63737CD7AE;3949.
+(rerunfilecheck)             Checksum: 3C4FC48D9BF58BBA69852F26C8E55AF1;4346.
 
 
 LaTeX Warning: There were undefined references.
@@ -734,13 +864,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
 ### simple group (level 1) entered at line 65 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9097 strings out of 493633
- 133395 string characters out of 3143378
- 238634 words of memory out of 3000000
- 12028 multiletter control sequences out of 15000+200000
+ 9307 strings out of 493633
+ 137045 string characters out of 3143378
+ 248066 words of memory out of 3000000
+ 12187 multiletter control sequences out of 15000+200000
  17022 words of font info for 67 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 43i,12n,46p,1247b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,46p,1247b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
@@ -759,10 +889,10 @@ ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/l
 ocal/texlive/2011/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on thesis.pdf (51 pages, 315413 bytes).
+Output written on thesis.pdf (60 pages, 698948 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 498 words of extra memory for PDF output out of 10000 (max. 10000000)
 
