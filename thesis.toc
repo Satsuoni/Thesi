@@ -37,9 +37,8 @@
 \contentsline {subsection}{\numberline {4.1.1}Overview}{27}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}General-purpose computing on graphics processing units}{29}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Open GL ES programmable graphic pipeline}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Open GL ES programmable graphic pipeline}{31}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}GPUImage programming library}{31}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Limitations}{32}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.2}GPUImage programming library}{31}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Limitations}{32}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Modification of Pegasos algorithm for parallel processing}{33}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Modification description}{33}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Evaluation}{35}{subsection.4.3.2}
