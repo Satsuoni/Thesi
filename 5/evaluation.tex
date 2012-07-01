@@ -17,10 +17,10 @@
 
 \chapter{Evaluation of our algorithm in comparison to related algorithms} % top level followed by section, subsection
 \section{Comparison to online SVM training algorithms: Pegasos and NORMA}
+\label{ExperimentsNorma}
+We compare our algorithm to both Pegasos \cite{Pegasos} and Norma \cite{Norma}, implemented on MATLAB for both the linear and the kernel-based case. The experiments are being run on AMD Phenom X4 965, with only one core being used for calculations. We perform several experiments, aiming to compare generalization error and convergence rates over different datasets, as well as the ability of the algorithm to adapt to the distribution with the changing parameters (flexibility and robustness) . 
 
-We compare our algorithm to both Pegasos {{=ref=}} and Norma {{=ref=}}, implemented on MATLAB for both the linear and the kernel-based case. The experiments are being run on AMD Phenom X4 965, with only one core being used for calculations. We perform several experiments, aiming to compare generalization error and convergence rates over different datasets, as well as the ability of the algorithm to adapt to the distribution with the changing parameters (flexibility and robustness) . 
-
-We use several artificial datasets with known distributions and separation properties, and a Forest Covertype dataset (separating class 5 from other classes), originally used in {{=ref=}}, and also used for comparison of convergence speed in {{=ref=}}. The artificial datasets are generated  according to the following distributions:
+We use several artificial datasets with known distributions and separation properties, and a Forest Covertype dataset (separating class 5 from other classes), originally used in \cite{Forest}, and also used for comparison of convergence speed in \cite{Pegasos}. The artificial datasets are generated  according to the following distributions:
 
 \begin{enumerate}
   \item \emph{High-dimensional linearly separable data (Linear)} \label{it1} A random hyperplane is created in 50-dimensional space. Data points are generated randomly to both positive and negative sides of the hyperplane. Data points too close to the hyperplane are filtered out to create a clear margin. 
@@ -144,19 +144,42 @@ Covertype & 0.19 & 0.2 & 0.35 & 0.43 & 0.48 \\
 
 \section{Comparison to offline algorithm: AdaBoost}
 \label{AdaCompare}
-In the interests of fairness, we also compare our algorithm to the AdaBoost in the offline setting. Since our algorithm is designed for online usage, we simulate the onile environment by sequentially feeding it data samples randomly selected from the training dataset. Since a single iteration of the AdaBoost results in an additional weak classifier being added, while our algorithm takes $r$ iterations to do the same, to obtain equivalent conditions for testing we only evaluate the accuracy of our algorithm every $r$'s iteration. Also for equivalence, we use a pool of $M$ randomly selected linear classifiers for weak classifier selection.
+In the interests of fairness, we also compare our algorithm to the AdaBoost in the offline setting. Since our algorithm is designed for online usage, we simulate the online environment by sequentially feeding it data samples randomly selected from the training dataset. Since a single iteration of the AdaBoost results in an additional weak classifier being added, while our algorithm takes $r$ iterations to do the same, to obtain equivalent conditions for testing we only evaluate the accuracy of our algorithm every $r$'s iteration. Also for equivalence, we use a pool of $M$ randomly selected linear classifiers for weak classifier selection.
 
-It should be noted that the above condition does not mean that our algorithm is more computationally intensive, since to choose a classifier for addition the AdaBoost algorithm has to calculate weighted error rates of every classifier in the selection pool to select a maximum, or use some optimization algorithm to obtain best classifier in the case of continuous classfier pool, resulting, in the discrete case, in $MN$ classifier evaluations, where $N$ is the number of training samples. Our algorithm, however, only performs $rK$ evaluations,  with $r \ll N$ and $K$ being the number of classifiers already added.  In fact,  in the online case our algorithm is similar to AdaBoost evaluating on the random subset of the classifier pool on the random subset of training data. 
+It should be noted that the above condition does not mean that our algorithm is more computationally intensive, since to choose a classifier for addition the AdaBoost algorithm has to calculate weighted error rates of every classifier in the selection pool to select a maximum, or use some optimization algorithm to obtain best classifier in the case of continuous classifier pool, resulting, in the discrete case, in $MN$ classifier evaluations, where $N$ is the number of training samples. Our algorithm, however, only performs $rK$ evaluations,  with $r \ll N$ and $K$ being the number of classifiers already added.  In fact,  in the online case our algorithm is similar to AdaBoost evaluating on the random subset of the classifier pool on the random subset of training data. 
+\begin{figure*}[t]
+    \centering
+\begin{subfigure}[b]{.45\linewidth}
+       \includegraphics[width=0.9\linewidth]{adas}
+\label{noref1}
+        \caption{Synthetic nonlinear dataset}
+      \end{subfigure}%
+\hspace{.01\linewidth}
+\begin{subfigure}[b]{.45\linewidth}
+	 \includegraphics[width=0.9\linewidth]{adaab}
+       \label{noref2}
+      \caption{Abalone dataset}
+  
+	 \end{subfigure}%
 
-We evalulate the methods on two datasets, one being a synthetic nonlinearly separable dataset, and the other  being the Abalone dataset from the UCI database, originated by {{=ref=}}, with classes 10-29 merged into a positive class and other classes being negative. The results of generalized error on the number of classifiers added are presented on {{=fig=}}. They clearly show, that while on the offline setting AdaBoost outperforms our algorithm, the incease in the convergence speed is not very large. This advantage is due to the fact that our algorithm only selects near-optimal classifier on each addition, while AdaBoost uses the optimally selected one. 
+    \caption{Experimental results comparing the performance of our algorithm to AdaBoost}
+    \label{adacom}
+\end{figure*}
+We evaluate the methods on two datasets, one being a synthetic nonlinearly separable dataset, and the other  being the Abalone dataset from the UCI database (\cite{frafra}), with classes 10-29 merged into a positive class and other classes being negative. The results of generalized error on the number of classifiers added are presented on \figref{adacom}. They clearly show, that while on the offline setting AdaBoost outperforms our algorithm, the increase in the convergence speed is not very large. This advantage is due to the fact that our algorithm only selects near-optimal classifier on each addition, while AdaBoost uses the optimally selected one. 
 \section{Comparison to the online AdaBoost}
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{odas}
+		\caption{Experimental results comparing the performance of our algorithm to online boosting}
+		\label{odacom}
+	\end{figure}
 
-IWe also compare our algorithm to the performance of the online AdaBoost presented in{{=ref=}}. We use the same datasets as in above section(\ref{AdaCompare}), with the difference being that the synthetic dataset is not pregenerated, since both of the algorithms are adapted to the online usage. 
+We also compare our algorithm to the performance of the online AdaBoost presented in \cite{OnlineBoost}. We use the same datasets as in above section(\ref{AdaCompare}), with the difference being that the synthetic dataset is not pregenerated, since both of the algorithms are adapted to the online usage. 
 
 For weak classifiers, we again use randomly generated linear classifiers, and for update stage of online Boosting algorithm we use the Pegasos iteration. 
 
-The results of convergence experiments are shown on {{=fig=}}. They show that the online boosting algorithm underperforms compared to our algorithm, and is less stable. For the noisy, inseparable Abalone datasets, for example, its  accuracy actually decreases with the increasing number of iterations. 
-It is also much more computaionally expensive for the number of selectors equal to the number of classifiers added by our algorithm due to the fact that it erforms updates on the whole pool of classifiers at once to estimate the optimal one. We can conclude that for most cases our algorithm would be superior to the online boosting.
+The results of convergence experiments are shown on \figref{odacom}. They show that the online boosting algorithm underperforms compared to our algorithm, and is less stable. It does not converge well for both synthetic and Abalone dataset (not pictured).
+It is also much more computationally expensive for the number of selectors equal to the number of classifiers added by our algorithm due to the fact that it performs updates on the whole pool of classifiers at once to estimate the optimal one. We can conclude that for most cases our algorithm would be superior to the online boosting.
 
 
 

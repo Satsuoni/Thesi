@@ -70,7 +70,7 @@ When using \eqrefr{Hingeloss}, dual form of \eqrefr{expandedPrimal} is the same 
 
 It is easy to see that all of the above formulas can be expressed in terms of linear combinations of kernel function $k(\cdot,\cdot)$ on the input data samples and coefficients $\alpha_i$. For instance, confidence function of the classifier $f(\vec{x},\vec{w})=\vec{w}*\vec{x}$  can be replaced with $f(\vec{x};\{\vec{x_i},\alpha_i\,y_i\})=\sum_{i=1}^{n}\alpha_i y_i k(\vec{x},\vec{x_i})$. The linear function $k(\vec{x_i},\vec{x_j})=\vec{x_i}\cdot \vec{x_j}$ of the original formulation can then be replaced by any function satisfying Mercer's condition, i.e. any positive definite kernel. There also exists a body of research (such as \cite{negative}) that deals with practical applications of non-positive definite kernels (such as well known sigmoid function), but that lies beyond the scope of a current work. 
 
- The Mercer's condition, in essence, guarantees that there exists a feature space $V$, that has an operation of inner product defined in it,  and a map from the input data space $S$, $\phi : S \leftarrow V$so that kernel function between two vectors $\vec{x},\vec{y} \in S$ is equivalent to inner product: $k(\vec({x},\vec{y})=\phi(\vec{x})\cdot \phi(\vec{y})$. Essentially, the kernel trick maps input vectors $\vec{x_i}$ into larger-dimensional feature vector space $V$ , where, hopefully, the data becomes linearly separable (see {{=fig=}} for illustration).
+ The Mercer's condition, in essence, guarantees that there exists a feature space $V$, that has an operation of inner product defined in it,  and a map from the input data space $S$, $\phi : S \leftarrow V$so that kernel function between two vectors $\vec{x},\vec{y} \in S$ is equivalent to inner product: $k(\vec({x},\vec{y})=\phi(\vec{x})\cdot \phi(\vec{y})$. Essentially, the kernel trick maps input vectors $\vec{x_i}$ into larger-dimensional feature vector space $V$ , where, hopefully, the data becomes linearly separable.
 
 This techniques allows using SVM as nonlinear classifier, and greatly expands the  variety of possible applications since as long as the kernel function is defined, the input vectors $\vec{x_i}$ do not even have to be numbers, and can instead be words or area descriptors in an image (\cite{bertelli2011kernelized}). However, its application also increases the costs associated with learning and using the classifier, since instead of a single vector $\vec{w}$ we have to store all nonzero $\alpha_i$ and associated $\vec{x}_i$, and the increased dimensionality of the feature space guarantees the larger possible amount of support vectors as compared to the linear formulation. Also, the same increased dimensionality increases the VC dimension of the classifier, raising bounds on the generalization error, i.e. increasing the risk of overfitting. In addition, the kernel formulation makes the primal problem much harder to solve, biasing the existing research towards quadratic dual formulation, although the methods of dealing with it exist and are introduced in  section \ref{NORMAIntro} below.
 \begin{table}
@@ -115,13 +115,13 @@ H(\vec{x},\{\beta_i\})=sign(F(\vec{x},\{\beta_i\}))
 \end{equation}
 would achieve error rate below arbitrary threshold.
 
-Boosting algorithms were originally an answer to the question posed by Kearns ({{=ref=}}, of whether a set of weak classifiers can be combined to form an arbitrary strong classifier. The proof of the possiblity delivered by Shapite {{=ref=}} has significant impact on the field of classification, and has lead to many related algorithms being developed. Amongst the most effective and popular is the AdaBoost, first introduced in {{=ref=}}, which shall be reviewed in more detail below, since it forms part of the basis of our proposed method.
+Boosting algorithms were originally an answer to the question posed by Kearns (\cite{kearns}, of whether a set of weak classifiers can be combined to form an arbitrary strong classifier. The proof of the possibility delivered by Shapire in \cite{schap} had significant impact on the field of classification, and has lead to many related algorithms being developed. Amongst the most effective and popular is the AdaBoost, first introduced in \cite{adaor}, which shall be reviewed in more detail below, since it forms part of the basis of our proposed method.
 
 \subsection{AdaBoost} 
 
-In this section, we shall briefly describe the AdaBoost algorithm for later reference. For the detailed derivation, please refer to te {{=ref=}}.
+In this section, we shall briefly describe the AdaBoost algorithm for later reference. For the detailed derivation, please refer to the \cite{adaor}.
 
-AdaBoost, short for Adaptive Boosting, is a greedy algorithm formulated by Yoav Freund and Robert Schapire, that can be used in conjunction with many other lesrning algorithms serving as a source for the set of the weak classifiers. AdaBoost is adaptive in the sense that subsequent weak classifiers added to the solution are tweaked in favor of those instances misclassified by previous classifiers. For this reason,  AdaBoost can be sensitive to noisy data, however, it performs well on most datasets, and have been successfully used for the variety of tasks.  Of the particuar interest to our work is its application to image processing and feature selection, deescribed in {{=ref=}}. 
+AdaBoost, short for Adaptive Boosting, is a greedy algorithm formulated by Yoav Freund and Robert Schapire, that can be used in conjunction with many other learning algorithms serving as a source for the set of the weak classifiers. AdaBoost is adaptive in the sense that subsequent weak classifiers added to the solution are tweaked in favor of those instances misclassified by previous classifiers. For this reason,  AdaBoost can be sensitive to noisy data, however, it performs well on most datasets, and have been successfully used for the variety of tasks.  Of the particular interest to our work is its application to image processing and feature selection, described in \cite{OnlineBoost}. 
 
 AdaBoost adds a new weak classifier in each of a series of iterations  $t = 1,\ldots,T$. On each iteration, a distribution of weights $D_{t}$ is updated that indicates the importance of examples in the data set for the classification. On each round, the weights of each incorrectly classified example are increased, and the weights of each correctly classified example are decreased, so the new classifier focuses on the examples which have been misclassified by the previous classifiers.
 
@@ -140,15 +140,14 @@ $$
 
 After $T$ iterations, the resulting strong classifier can be calculated by \eqrefr{BoostingClassifier}
 
-Adaboost can be seen as a minimization of the
 \subsection{Other boosting algorithms}
-Boosting algorithms mainly differ in te way they esmimate weights $\beta_i$. Some of them prioritize misclassified examples, same as the AdaBoost, while others, like BrownBoost {{=ref=}}, attempt to increase robustness to noise and outliers by "giving up", and decreasing weights of the samples that has been repeatedly misclassified. 
+Boosting algorithms mainly differ in te way they estimate weights $\beta_i$. Some of them prioritize misclassified examples, same as the AdaBoost, while others, like BrownBoost, attempt to increase robustness to noise and outliers by "giving up", and decreasing weights of the samples that has been repeatedly misclassified. 
 
 While our proposed learning technique uses AdaBoost as the basis for sample weighting, it is flexible enough to be easily adjusted to other methods. 
 
 \section{Online classification algorithms}
 
-As mentioned above, many of the offline classification algorithms suffer from superlinear computational costs in the number of training samples. As the amount of training data increases, the training quickly becomes unfeasible. Also, with the increasing amount of common devices capable of data acquisition, such as mobile phones wit video cameras, etc, real-time classification tasks that allow for the adaptation to the incoming data stream and operate on a limited amount of data available dureing a single frame become more and more relevant. This is one of the reasons for the development of our proposed algorithm and sample application.  
+As mentioned above, many of the offline classification algorithms suffer from superlinear computational costs in the number of training samples. As the amount of training data increases, the training quickly becomes unfeasible. Also, with the increasing amount of common devices capable of data acquisition, such as mobile phones wit video cameras, etc, real-time classification tasks that allow for the adaptation to the incoming data stream and operate on a limited amount of data available during a single frame become more and more relevant. This is one of the reasons for the development of our proposed algorithm and sample application.  
 
 In this section therefore, we introduce the algorithms specifically developed or modified for the online setting, that can be used as the replacement of the algorithms described above. 
 \subsection{Online SVM}
@@ -196,6 +195,7 @@ $$
 Here one of the drawbacks of the kernel bases-methods becomes obvious, since it can be seen that on each iteration an additional kernel expansion vector is added, quickly increasing the storage requirements.
 
 \subsubsection{Pegasos}
+\label{pegaSec}
 Pegasos algorithm, introduced in \cite{Pegasos}, is conceptually similar to the NORMA, with two key differences,
 one being that it incorporates an additional parameter $k$, which denotes the number of input samples accepted at a single iteration, and averages the loss function in \eqrefr{kernelPrimalInst} over $k$. The other key difference is the additional scaling step after each iteration, which drastically increases the convergence rate.
 $$

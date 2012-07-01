@@ -3,9 +3,22 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Maximum margin separation}}{6}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Pegasos algorithm with weighted samples}}{20}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Number of classifiers evaluated per iteration, NORMA and our algorithm}}{18}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Approximation of the target area by the RBF kernel\relax }}{19}{figure.caption.8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of a random linear classifier}}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A diagram of our method}}{22}{figure.caption.10}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The Pegasos algorithm with weighted samples}}{23}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of our method converging to a target distribution on a sample dataset.\relax }}{24}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Loss functions illustrated}}{25}{figure.3.7}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces iPhone 4S\relax }}{28}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces OpenGL ES programmable graphic pipeline (simplified)\relax }}{30}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces PowerVR SGX GPU architecture schematics\relax }}{31}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pyramidal Pegasos Algorithm\relax }}{34}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Graphic filter layout used for tracking\relax }}{41}{figure.4.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental results comparing the performance of our algorithm to linear implementation of Pegasos and NORMA\relax }}{42}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Experimental results comparing the performance of our algorithm implementation of Pegasos and NORMA using Gaussian RBF\relax }}{43}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental results comparing the performance of our algorithm to linear implementation of Pegasos and NORMA\relax }}{48}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Experimental results comparing the performance of our algorithm implementation of Pegasos and NORMA using Gaussian RBF\relax }}{49}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Experimental results comparing the performance of our algorithm to AdaBoost\relax }}{50}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Experimental results comparing the performance of our algorithm to online boosting\relax }}{50}{figure.5.4}
 \addvspace {10\p@ }

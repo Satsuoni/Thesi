@@ -13,44 +13,47 @@ A level-1 auxiliary file: 5/evaluation.aux
 A level-1 auxiliary file: 6/Conclusion.aux
 The style file: Latex/Classes/PhDbiblio-bold.bst
 Database file #1: 9_backmatter/references.bib
-You've used 17 entries,
+Warning--empty institution in Boostsvm
+Warning--empty journal in rop
+You've used 27 entries,
             2170 wiz_defined-function locations,
-            626 strings with 7111 characters,
-and the built_in function-call counts, 6940 in all, are:
-= -- 707
-> -- 248
-< -- 11
-+ -- 99
-- -- 80
-* -- 498
-:= -- 1021
-add.period$ -- 57
-call.type$ -- 17
-change.case$ -- 74
+            686 strings with 8336 characters,
+and the built_in function-call counts, 10441 in all, are:
+= -- 1060
+> -- 380
+< -- 14
++ -- 153
+- -- 122
+* -- 762
+:= -- 1567
+add.period$ -- 89
+call.type$ -- 27
+change.case$ -- 116
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 336
-empty$ -- 580
-format.name$ -- 80
-if$ -- 1538
+cite$ -- 29
+duplicate$ -- 499
+empty$ -- 864
+format.name$ -- 122
+if$ -- 2274
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 17
-newline$ -- 87
-num.names$ -- 34
-pop$ -- 113
+int.to.str$ -- 27
+missing$ -- 26
+newline$ -- 137
+num.names$ -- 54
+pop$ -- 166
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 115
 quote$ -- 0
-skip$ -- 238
+skip$ -- 342
 stack$ -- 0
-substring$ -- 485
-swap$ -- 152
-text.length$ -- 11
+substring$ -- 725
+swap$ -- 211
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
-warning$ -- 0
-while$ -- 68
-width$ -- 19
-write$ -- 195
+type$ -- 106
+warning$ -- 2
+while$ -- 105
+width$ -- 29
+write$ -- 303
+(There were 2 warnings)

@@ -26,10 +26,27 @@
 \newblock {\em Convex optimization}.
 \newblock Cambridge Univ Pr, 2004.
 
+\bibitem{chang}
+{\sc W.C. Chang and C.W. Cho}.
+\newblock {\bf Online boosting for vehicle detection}.
+\newblock {\em Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE
+  Transactions on}, {\bf 40}(3):892--902, 2010.
+
 \bibitem{SVM}
 {\sc Corinna Cortes and Vladimir Vapnik}.
 \newblock {\bf Support-Vector Networks}.
 \newblock {\em Mach. Learn.}, {\bf 20}(3):273--297, September 1995.
+
+\bibitem{adaor}
+{\sc Y.~Freund and R.~Schapire}.
+\newblock {\bf A desicion-theoretic generalization of on-line learning and an
+  application to boosting}.
+\newblock In {\em Computational learning theory}, pages 23--37. Springer, 1995.
+
+\bibitem{fung}
+{\sc J.~Fung}.
+\newblock {\bf Computer Vision on the GPU}.
+\newblock {\em GPU Gems}, {\bf 2}:649--666, 2005.
 
 \bibitem{grabner2006}
 {\sc H.~Grabner and H.~Bischof}.
@@ -54,17 +71,35 @@
 \newblock {\em SVM-Light Support Vector Machine http://svmlight. joachims.
   org/, University of Dortmund}, {\bf 19}, 1999.
 
+\bibitem{kearns}
+{\sc M.~Kearns}.
+\newblock {\bf Thoughts on hypothesis boosting}.
+\newblock {\em Unpublished manuscript, December}, 1988.
+
 \bibitem{Norma}
 {\sc Jyrki Kivinen, Alexander~J. Smola, and Robert~C. Williamson}.
 \newblock {\bf Online learning with kernels.}
 \newblock {\em IEEE Transactions on Signal Processing}, {\bf 52}(8):2165--2176,
   2004.
 
+\bibitem{LBP}
+{\sc T.~Ojala, M.~Pietikainen, and T.~Maenpaa}.
+\newblock {\bf Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns}.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, {\bf 24}(7):971--987, 2002.
+
 \bibitem{negative}
 {\sc C.S. Ong, X.~Mary, S.~Canu, and A.J. Smola}.
 \newblock {\bf Learning with non-positive kernels}.
 \newblock In {\em Proceedings of the twenty-first international conference on
   Machine learning}, page~81. ACM, 2004.
+
+\bibitem{OZ}
+{\sc N.~Oza and S.~Russell}.
+\newblock {\bf {Online bagging and boosting}}.
+\newblock In {\em Artificial Intelligence and Statistics 2001}, pages 105--112.
+  Morgan Kaufmann, 2001.
 
 \bibitem{platt}
 {\sc J.C. Platt}.
@@ -73,11 +108,33 @@
 \newblock {\em Advances in neural information processing systems}, pages
   557--563, 1999.
 
+\bibitem{Boostsvm}
+{\sc Gunnar Ratsch, Bernhard Scholkopf, Sebastian Mika, and Klaus-Robert
+  Muller}.
+\newblock {\bf SVM and boosting: One class}.
+\newblock Technical report, 2000.
+
+\bibitem{rop}
+{\sc D.~Ro and H.~Pe}.
+\newblock {\bf Pattern classification and scene analysis}.
+\newblock 1973.
+
+\bibitem{schap}
+{\sc R.E. Schapire}.
+\newblock {\bf The strength of weak learnability}.
+\newblock {\em Machine learning}, {\bf 5}(2):197--227, 1990.
+
 \bibitem{Pegasos}
 {\sc Shai Shalev-Shwartz, Yoram Singer, and Nathan Srebro}.
 \newblock {\bf Pegasos: Primal Estimated sub-GrAdient SOlver for SVM}.
 \newblock In {\em Proceedings of the 24th international conference on Machine
   learning}, ICML '07, pages 807--814, New York, NY, USA, 2007. ACM.
+
+\bibitem{smola2001}
+{\sc A.J. Smola, Z.L. Ovari, and R.C. Williamson}.
+\newblock {\bf Regularization with dot-product kernels}.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  308--314, 2001.
 
 \bibitem{grabner2009}
 {\sc S.~Stalder, H.~Grabner, and L.~Van~Gool}.

@@ -1,8 +1,10 @@
 \nomenclatureentry{aSVM@[{SVM}]\begingroup Support Vector Machines, a set of learning methods used mainly for classification and regression.\nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aGPU@[{GPU}]\begingroup Graphics Processing Unit, a special processing unit geared towards high-speed parallel processing. \nomeqref {0}|nompageref}{x}
+\nomenclatureentry{aGPGPU@[{GPGPU}]\begingroup General-purpose computing on graphics processing units\nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aSGD@[{SGD}]\begingroup Stochastic Gradient Descent. Simple optimization method for minimizing an objective function that is written as a sum of differentiable functions.\nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aVC Dimension@[{VC Dimension}]\begingroup Vapnik–Chervonenkis dimension is a measure of the capacity of a statistical classification algorithm, defined as the cardinality of the largest set of points that the algorithm can shatter.\nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aRBF@[{RBF}]\begingroup Radial basis function, one of the most popular kernel functions for SVM. \nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aIP methods@[{IP methods}]\begingroup Interior point methods for convex optimization\nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aSMO@[{SMO}]\begingroup Sequential minimal optimization, a decomposition method for SVM training. \nomeqref {0}|nompageref}{x}
 \nomenclatureentry{aRKHS@[{RKHS}]\begingroup Reproducible Kernel Hilbert Spaces\nomeqref {0}|nompageref}{x}
+\nomenclatureentry{aROI@[{ROI}]\begingroup Region of Interest, an area of the image that is searched for object position\nomeqref {0}|nompageref}{x}

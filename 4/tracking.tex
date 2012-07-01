@@ -1,17 +1,26 @@
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
-
+\ifpdf
+    \graphicspath{{4/figures/PNG/}{4/figures/PDF/}{4/figures/}}
+\else
+    \graphicspath{{4/figures/EPS/}{4/figures/}}
+\fi
 %: ----------------------- name of chapter  -------------------------
 \chapter{Application of proposed method to object tracking on a mobile device} % top level followed by section, Recently
 
-Recently, more and more powerful mobile devices become publically available. Every next iteration increases the CPU speed and memory available. However, there is still a significant dearth of resources on the mobile devices as compared to the desktop machines, especially when it comes with the CPU power. Yet, many consumer-level devices start to include a graphical processing unit that is capable of rapidly performing parallel programming. In this section, we show how our learning method canbe implemented on the mobile device for the challenging purpose of object tracking. The simplicity and speed of our method, combined with original simple features proposed in the section, allow us to develop a tracking algorithm that performs in near real time. This shows the feasibility of using out method for real-world apllications in image processing.
+Recently, more and more powerful mobile devices become publicly available. Every next iteration increases the CPU speed and memory available. However, there is still a significant dearth of resources on the mobile devices as compared to the desktop machines, especially when it comes with the CPU power. Yet, many consumer-level devices start to include a graphical processing unit that is capable of rapidly performing parallel programming. In this section, we show how our learning method can be implemented on the mobile device for the challenging purpose of object tracking. The simplicity and speed of our method, combined with original simple features proposed in the section, allow us to develop a tracking algorithm that performs in near real time. This shows the feasibility of using out method for real-world applications in image processing.
 \section{Resources available on the mobile device: iPhone 4S}
 \subsection{Overview}
-As our target mobile device, we have chosen the latest iteration of the popular iPhone brand: iPhone 4S. Our choice was partially guided by the fact that the device itself, and the means to program it were readily available and the proggramming lay well within our area of expertise. Much more important, however, was the possibility of harnessing the power of GPU, thereby increasing the speed of the parallel computations.
+As our target mobile device, we have chosen the latest iteration of the popular iPhone brand: iPhone 4S. Our choice was partially guided by the fact that the device itself, and the means to program it were readily available and the programming lay well within our area of expertise. Much more important, however, was the possibility of harnessing the power of GPU, thereby increasing the speed of the parallel computations.
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{iphone4s}
+		\caption{iPhone 4S}
+		\label{iph}
+	\end{figure}
+iPhone 4S is a touch-screen based smartphone released by Apple in the fall of 2011. It's design is similar to that of it's predecessor, iPhone 4 (see \figref{iph}). Its processing capabilities consist of the Apple A5 system-on-a-chip, that contains a dual-core ARM Cortex-A9 MPCore CPU, that includes NEON SIMD coprocessor for vector operations on the floating-point values, running at 1Ghz, image signal processing unit, performing such operations as face detection, white balance and image stabilization, and most importantly to us, an Imagination Technologies PowerVR SGX543 dual-core  graphics processing unit. Unfortunately,  the direct access to the ISP unit is limited to the system software, so it cannot be used or programmed to increase image processing speed, leaving us to rely on GPU only.
 
-iPhone 4S is a touch-sceen based smartphone released by Apple in the fall of 2011. It's design is similar to that of it's predescessor, iPhone 4 ({{=fig==}}). Its processing capabilities consist of the Aplle A5 system-on-a-chip, that contains a dual-core ARM Cortex-A9 MPCore CPU, that includes NEON SIMD coprocessor for vector operations on the floating-point values, running at 1Ghz, image signal processing unit, performing such operations as face detection, white balance and image stabilization, and most importanly to us, an Imagination Technologies PowerVR SGX543 dual-core  graphics processing unit. Unfortunately,  the direct access to the ISP unit is limited to the system software, so it cannot be used or programmed to increase image processing speed, leaving us to rely on GPU only.
-
-This phone demonstrates the increasing speed with which consumer-level mobile devices approach the capabilities of desktop computers. In fact, this a starling example of the Moore's law, since the processing capabilities of iPhone 4S are nearly double of its predescessor of only a year prior.
+This phone demonstrates the increasing speed with which consumer-level mobile devices approach the capabilities of desktop computers. In fact, this a starling example of the Moore's law, since the processing capabilities of iPhone 4S are nearly double of its predecessor of only a year prior.
 
 Latest versions of the iPhone system software (iOS 4 and 5) support the OpenGL 2.0 graphics library, which removes the fixed graphics pipeline, and introduces programmable vertex and fragment shaders, which allow not only a variety of imaging and video effects, but also, to some extent general data processing in parallel. 
 
@@ -24,24 +33,35 @@ General purpose computing on the GPU has greatly benefited from the new architec
 
 Although GPGPU attempts were made in the past, they weren't very successful primarily because previous GPU architectures were very difficult to program for parallel processing. 
 
-The effectiveness of the GPU useage largely depends on application. Tasks that are similar to graphics processing, that is, massively paraller, with low to none interdependency between the values being calculated. 
-Usually, a cerain amount of interaction between CPU ang GPU is beneficial to the program's performance, however, one must always keep in mind that on most systems transfer of data between CPU and GPU memory is very slow, creating a programming bottleneck. 
+The effectiveness of the GPU usage largely depends on application. Tasks that are similar to graphics processing, that is, massively parallel, with low to none interdependency between the values being calculated. 
+Usually, a certain amount of interaction between CPU and GPU is beneficial to the program's performance, however, one must always keep in mind that on most systems transfer of data between CPU and GPU memory is very slow, creating a programming bottleneck. 
 
 As we have already established, GPUs are particularly well suited for parallel processing, a situation typically found in  image processing, generic patterns analysis, search for oilfields and natural resources, and analysis of financial risk calculation patterns. On the other hand, using GPUs for databases, data compression, recursive algorithms, and processes that require a high logical control of calculation is not ideal. A traditional CPU architecture would be far more efficient in this situation.
 
-Unfortunaltely,  the low-power devices like iPhone do not benefit from the advantage of specially developed GPGPU languages, like CUDA or Cg. This means that we have to explore the programmable capabilities of the shaders in the graphics pipeline, while dealing with severe limitations described in detail below. 
+Unfortunately,  the low-power devices like iPhone do not benefit from the advantage of specially developed GPGPU languages, like CUDA or Cg. This means that we have to explore the programmable capabilities of the shaders in the graphics pipeline, while dealing with severe limitations described in detail below. 
 
 \subsection{Open GL ES programmable graphic pipeline}
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{glespipe}
+		\caption{OpenGL ES programmable graphic pipeline (simplified)}
+		\label{pipe}
+	\end{figure}
+OpenGL ES is a version of OpenGL graphics library for use on the mobile devices. Starting from OpenGL ES 2.0, it has received a complete overhaul, and for the first time has enabled usage of programmable graphics pipeline on the mobile devices.  While before, only some parameters of the graphic processing were available to change , OpenGL ES 2.0 added the ability of adding small programs called shaders (due to their original usage for achieving various shading effects), that are executed on GPU at key points during the graphic rendering process. The graphic processing pipeline is illustrated on \figref{pipe}
 
-OPenGL ES is a verstion of OpenGL graphics library for use on the mobile devices. Starting from OpenGL ES 2.0, it has received a complete overhaul, and for the first time has enabled usage of programmable graphics pipeline on the mobile devices.  While before, only some parameters of the graphic processing were available to change , OPenGL ES 2.0 added the ability of adding small programs called shaders (due to their original usage for achieving various shading effects), that are executed on GPU at key points during the graphic rendering process. The graphic processing pipeline is illustrated on {{=fig=}} 
+More specifically, ES 2.0 standard allow the usage of the so called vertex and fragment shaders. Vertex shaders are programs that are called once for each rendered vertex, and allow certain parameters to be interpolated between vertices on the same primitive. When applied for general calculations, they are generally used to set up environment for the fragment shader.
 
-More specifically, ES 2.0 standard allow the usage of the so called vertex and freagment shaders. Vertex shaders are programs that are called once for each reddered vertex, and allow certain parameters to be interpolated between vertices on the same primitive. When applied for general calculations, they are generally used to set up environment for the fragment shader.
-
-A fragment shader is called once per fragment, which usually corresponds to a single pixel on the screen or texture. Therefore, this is the shader where the majority ofthe parallel processing takes place. However, there are several limitations to the usage of the shader program, not the least of which being that a single shader can ony produce a single 4-byte output  as of OpenGL ES 2.1. 
-
-However, as can be seen from the illustration of the GPU architecture {{=fig=}}, the advantage in using shaders lies in the fact that a large amount of them are executed at the same time, significantly reducing computational times for similar operations. 
+A fragment shader is called once per fragment, which usually corresponds to a single pixel on the screen or texture. Therefore, this is the shader where the majority of the parallel processing takes place. However, there are several limitations to the usage of the shader program, not the least of which being that a single shader can only produce a single 4-byte output  as of OpenGL ES 2.1. 
+\subsection{Open GL ES programmable graphic pipeline}
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{GPUScheme}
+		\caption{PowerVR SGX GPU architecture schematics}
+		\label{gpu}
+	\end{figure}
+However, as can be seen from the illustration of the GPU architecture on \figref{gpu} , the advantage in using shaders lies in the fact that a large amount of them are executed at the same time, significantly reducing computational times for similar operations. 
 \subsection{GPUImage programming library}
-In our work, we use GPUImage programming library for iOS, written in Objective C. While in general, attaching and switching shaders is a relatively complex programming task due to an amount of auxillary OpenGL code, the use of this library allows us to simplify and  streamline what would otherwise be nearly impossible to program by exposing a simple and user-friendly API. 
+In our work, we use GPUImage programming library for iOS, written in Objective C. While in general, attaching and switching shaders is a relatively complex programming task due to an amount of auxiliary OpenGL code, the use of this library allows us to simplify and  streamline what would otherwise be nearly impossible to program by exposing a simple and user-friendly API. 
 
  The GPUImage framework is a BSD-licensed iOS library that lets you apply GPU-accelerated filters and other effects to images, live camera video, and movies. This library is available as an open source project on \href{https://github.com/BradLarson/GPUImage}{Github}, and allows us to express image processing tasks as a series of completely customizable filters that can be written using the OpenGL Shading Language. In our work, we develop several filters specific for our application, and also make use of several simple filters that are already available.
 
@@ -59,16 +79,16 @@ In this section, we outline several limitations of the OpenGL ES shader system, 
 \begin {itemize}
 \item {\bf Lack of support for the floating point textures and limited precision}
 
-The most important limitation is the fact that all highly parallel inputs and outputs in OpenGL ES are supposed to be textures, i.e. 2D arrays of data coded in, 4-byte vectors representing color. While desktop OpenGL allows the use of floating point textures, where the 4 bytes represent a single floating-point number of high precision or 2 of lower precision, OpenGL ES lack this feature, necessitaing either recoding of incoming and outgoing data, which results in severe slowndowns rendering application useless, or working with low-precision data.
+The most important limitation is the fact that all highly parallel inputs and outputs in OpenGL ES are supposed to be textures, i.e. 2D arrays of data coded in, 4-byte vectors representing color. While desktop OpenGL allows the use of floating point textures, where the 4 bytes represent a single floating-point number of high precision or 2 of lower precision, OpenGL ES lack this feature, necessitating either recoding of incoming and outgoing data, which results in severe slowdowns rendering application useless, or working with low-precision data.
 
 This precludes the GPU computation and usage of such tools as the integral image, which lead to the fact that such image features as Haar-like features and histogram-based features cannot be computed effectively. 
 \item {\bf No support for preloaded render calls}
 
-When it is necessary to perform a sequence of operations on the GPU, especially such series in which every consecutive step utilizes data output form the previous one, it would often be beneficial to store the sequence on the GPU before execution. In OpenGL ES, we, hovewer, have to wait for each step to finish and inform CPU before starting the next one, significantly impacting performance. The only solution to this is to minimize the number of such operation series. 
+When it is necessary to perform a sequence of operations on the GPU, especially such series in which every consecutive step utilizes data output form the previous one, it would often be beneficial to store the sequence on the GPU before execution. In OpenGL ES, we, however, have to wait for each step to finish and inform CPU before starting the next one, significantly impacting performance. The only solution to this is to minimize the number of such operation series. 
 
 \item {\bf No procedures available for linear (non-2D) arrays}
 
-Once again, all operations on the mobile GPU are performed with textures sserving as a data sotrage. In addition to the precision problems, there is little to no support for large one-dimantional arrays, necessitating packing such arrays into 2D form, thus adding unnecesary operations in the shader code. 
+Once again, all operations on the mobile GPU are performed with textures serving as a data storage. In addition to the precision problems, there is little to no support for large one-dimensional arrays, necessitating packing such arrays into 2D form, thus adding unnecessary operations in the shader code. 
 \item {\bf Opaque memory layout}
 On the desktop, the layout of the memory available to each shader is well known, allowing to perform certain optimization techniques improving performance by efficient memory caching. In OpenGL ES, memory layout is more or less completely opaque. 
 
@@ -78,12 +98,17 @@ As was partially mentioned in the above point, possibly the only tool available 
 \end{itemize}
 
 \section{Modification of Pegasos algorithm for parallel processing}
-
-In this section we describe the modification to the Pegasos algorithm described in secref for more efficient parallel processing, and compare it to the original.
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{pyrapega}
+		\caption{Pyramidal Pegasos Algorithm}
+		\label{pyra}
+	\end{figure}
+In this section we describe the modification to the Pegasos algorithm described in sec. \ref{pegaSec} for more efficient parallel processing, and compare it to the original.
 \subsection{Modification description}
 The original Pegasos algorithm was designed for sequential or batch-sequential updates, i.e. only allowing for a single or limited number of input samples $\vec{x},y$ per iteration. In the image processing task, however, we usually have the situation where a large number of input samples, possibly one for each pixel, is available at the same time when the frame is processed. One solution would be to just use all these inputs as a single batch, but that would decrease the efficiency of the algorithm.
 
-Either way, for estimating the Pegasos update it is necessary to add the weighted value of misclassified sample together, which, while not a simple task for parallel processing, is relatively well developed {{=ref=}}. Therefore, based on the common algorithms for the parallel summations, we have developed a modification of the Pegasos algorithm which can be called Pyramidal Pegasos ({{=fig=}}). It uses the simple hierarchial scheme for summation, but in each step replaces summation with the following steps, assuming that each shader program has access to a sample vector and label pair $\vec{x}_i, y_i$, and a pair of weight vectors $\vec{w}_{i}$,$\vec{w}_{i+1}$ from the previous level(initialized at $\vec{0}$ on the first level):
+Either way, for estimating the Pegasos update it is necessary to add the weighted value of misclassified sample together, which, while not a simple task for parallel processing, is relatively well developed (\cite{fung}). Therefore, based on the common algorithms for the parallel summations, we have developed a modification of the Pegasos algorithm which can be called Pyramidal Pegasos (\figref{pyra}). It uses the simple hierarchical scheme for summation, but in each step replaces summation with the following steps, assuming that each shader program has access to a sample vector and label pair $\vec{x}_i, y_i$, and a pair of weight vectors $\vec{w}_{i}$,$\vec{w}_{i+1}$ from the previous level(initialized at $\vec{0}$ on the first level):
 \begin{enumerate}
 \item Average the weight vectors $\vec{w}_o=\frac{1}{2}\left(\vec{w}_{i}+\vec{w}_{i+1}\right)$
 \item Perform Pegasos update iteration (normal or weighted) on the vector $\vec{w}_o$ with $\vec{x}_i, y_i$
@@ -91,49 +116,55 @@ Either way, for estimating the Pegasos update it is necessary to add the weighte
 \end{enumerate}
 The result of the algorithm is a single vector of weights $\vec{w}$. It is easy enough to see that the amount of Pegasos updates performed is two times larger than in the case of sequential updates, but this expense is easily enough offset by the parallel processing gains. It is also possible to eliminate the first layer and distribute the data samples over layers , reducing the total number of updates to the number of input data samples.
 \subsection{Evaluation}
-In this section, we give a brief evaluation of the Pyramidal Pegasos modification, comparing its performance to the original Pegasos in order to determine whether we can use it in our application. For simplicity, we only evaluate the convergence on the linearly separable dataset. The results are shown on {{=fig=}}. It can be seen that the convergence rate of this modifications is similar to the original algorithm. Unfortunately, the actual implementation of the algorithm on GPU with the use of OpenGL ES programming framework has shown us, that due to a large overhead associated with additional rendering calls for each pyramid level, the speed of the algorithm suffes in comparison to the CPU-only implementation. This drawback, however, is not present on the desktop GPU. Therefore , for the current version of our testing application, we have decided to use the standard sequential algorithm. However, we still consider this algorithm to be useful learning tool for the case of better optimized parallel implementation. 
+In this section, we give a brief evaluation of the Pyramidal Pegasos modification, comparing its performance to the original Pegasos in order to determine whether we can use it in our application. For simplicity, we only evaluate the convergence on the linearly separable dataset. The results show that the convergence rate of this modifications is similar to the original algorithm. Unfortunately, the actual implementation of the algorithm on GPU with the use of OpenGL ES programming framework has shown us, that due to a large overhead associated with additional rendering calls for each pyramid level, the speed of the algorithm suffers in comparison to the CPU-only implementation. This drawback, however, is not present on the desktop GPU. Therefore , for the current version of our testing application, we have decided to use the standard sequential algorithm. However, we still consider this algorithm to be useful learning tool for the case of better optimized parallel implementation. 
 \section{Simple local image features}
 
-Due to the limitations of the OpenGL ES archtecture and high computational cost, extraction of the global image features, even the simple features like Haar-like features {{=ref=}} of local binary patterns(LBP) over large image region is unfeasible on the iPhone for any usable size of the region of interest, we had to develop our own set of fetures to estmiate the feasibility of using outlearning algorithm for image processing tasks.
+Due to the limitations of the OpenGL ES architecture and high computational cost, extraction of the global image features, even the simple features like Haar-like features (\cite{viola}) of local binary patterns(LBP) (\cite{LBP}) over large image region is unfeasible on the iPhone for any usable size of the region of interest, we had to develop our own set of features to estimate the feasibility of using our learning algorithm for image processing tasks.
 
-The features that we use in our experiments a partially based on the same idea as Haar-like features and LBP, but extremely simplified to minimize the number of texture  fetches necessary. Essentially, where their features deal with image regions, ours mainly deal with singular pixels, possibly afer passing the image through gaussian filter for increased stability. We show, that even when using such features, our algorithm can provide a remarkable level of distinctivenes between image regions.
+The features that we use in our experiments a partially based on the same idea as Haar-like features and LBP, but extremely simplified to minimize the number of texture  fetches necessary. Essentially, where their features deal with image regions, ours mainly deal with singular pixels, possibly after passing the image through Gaussian filter for increased stability. We show, that even when using such features, our algorithm can provide a remarkable level of distinctiveness between image regions.
 
-The feature vector for a single randomized feature is collected as follows ({{=fig=}}):
+The feature vector for a single randomized feature is collected as follows:
 \begin{enumerate}
 \item For each feature, two random offsets $\vec{\Delta}_1$, $\vec{\Delta}_2$ are chosen
 \item For each pixel with coordinate $\vec{p}$ in the ROI, luminance values of the pixels with coordinates $\vec{p}+\vec{\Delta}_1$ and $\vec{p}+\vec{\Delta}_2 $ are compared, and the result of comparison added as a feature
 \item $r,g$, normalized color values for pixels at coordinates $\vec{p}$, $\vec{p}+\vec{\Delta}_1$ and $\vec{p}+\vec{\Delta}_2 $ are added to the feature vector.
 \end{enumerate} 
 
-As a result a single feature simply gives information of the color values of three pixels arranged in a certain configuration, and indicates whether one of the pixels in brigther than another, possibly indication an edge.
+As a result a single feature simply gives information of the color values of three pixels arranged in a certain configuration, and indicates whether one of the pixels in brighter than another, possibly indication an edge.
 
 On its own, as single feature vector like that does not have much discriminative power, however, as we will show later, when several such features are combined using our proposed learning methods, they become capable of distinguishing a wide range of objects, although the performance is still inferior to the more robust global features. 
 \section{Tracking}
-In this work, we evaluate the applicabity of the features desribed above combined with our learning method to image processing tasks. As an example task, inspired by {{=ref=}}, we have chosen simple object tracking. 
+In this work, we evaluate the applicability of the features described above combined with our learning method to image processing tasks. As an example task, inspired by \cite{OnlineBoost}, we have chosen simple object tracking. 
 
-As shown in {{=ref=}}, object tracking on a n image can be cast as a binary classification problem over a region of interest, separating an area containing object (usually a bounding box rectangle) from all other bositions in the neghborhood. Some kind of movement model may be used to constrain the search area in order to reduce the amount of necessary computations. Also, since object changes from frame to frame, online adaptation can be used to update object model, as described in {{=ref=}}. Since our model is geared towars online learning, such updates are also possible, and theeir effect is investigated below.
+As shown in \cite{avidan}, object tracking on an image can be cast as a binary classification problem over a region of interest, separating an area containing object (usually a bounding box rectangle) from all other positions in the neighborhood. Some kind of movement model may be used to constrain the search area in order to reduce the amount of necessary computations. Also, since object changes from frame to frame, online adaptation can be used to update object model, as described in \cite{OnlineBoost}. Since our model is geared towards online learning, such updates are also possible, and their effect is investigated below.
 \subsection{Training regime}
-First, in order to separate object position from the surrounding background, an object model in the feature space have to be trained. Usuallym this training is assumed to be done offline, afyer the original object position is . In our case, since we don't have a specific object, an area in the middle of the screen is trained as an object to be tracked. A ROI around the object position is selected, and a large amount of features are extracted and passed through a trainer with high lerning rate set. Several pixels in the center of ROI are assumed to have label value of $1$, i.e. are assumed to be the true position of an object being trained, while all other pixels are assumed to have label value of $-1$. 
+First, in order to separate object position from the surrounding background, an object model in the feature space have to be trained. Usually, this training is assumed to be done offline, after the original object position is . In our case, since we don't have a specific object, an area in the middle of the screen is trained as an object to be tracked. A ROI around the object position is selected, and a large amount of features are extracted and passed through a trainer with high learning rate set. Several pixels in the center of ROI are assumed to have label value of $1$, i.e. are assumed to be the true position of an object being trained, while all other pixels are assumed to have label value of $-1$. 
 
 The large amount of negative samples compared to the positive ones creates an extremely imbalanced data set, which negatively affects the results of the learning algorithms based on gradient descent, like ours. In order to balance that, the positive samples are fed into algorithm multiple times. 
 
-For this experimental application, we use a multiple feature modification of our algorithm described in {{=secref=}}, with each new featue being randomly generated, as well as the removal of weak classifier due to the computational constraints of the mobile device.
+For this experimental application, we use a multiple feature modification of our algorithm described in section \ref{OurMethod}, with each new feature being randomly generated, as well as the removal of weak classifier due to the computational constraints of the mobile device.
 
 \subsection{Position estimation}
-After the initial model is trained, the application starts tracking the trained object, as well as continuosly updating the model. In order to calculate the position of the object, we simpy apply thresholding to the confindence function in the ROI, and calculate weighted average position on the remaining values. If all values are below threshold, the object is considered lost. This simple algorithm works resonably well for many cases, although it has several drawbacks.
+After the initial model is trained, the application starts tracking the trained object, as well as continuously updating the model. In order to calculate the position of the object, we simply apply a threshold to the confidence function in the ROI, and calculate weighted average position on the remaining values. If all values are below threshold, the object is considered lost. This simple algorithm works reasonably well for many cases, although it has several drawbacks.
 \section{Resulting Application layout}
-The diagram on {{=fig=}} shows the resulting layout of the filters used by experimental application. The layers used are, in order
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.9\textwidth]{tracking}
+		\caption{Graphic filter layout used for tracking}
+		\label{tracking}
+	\end{figure}
+The diagram on \figref{tracking} shows the resulting layout of the filters used by experimental application. The layers used are, in order
 \begin{enumerate}
 \item {\bf Input} An input texture uploaded from the iPhone video camera, at the resolution 640x480
-\item {\bf Crop filter} Input image is cropped to an expaned region of interest.
-\item {\bf Blur filter} Cropped image is blurred by a low amount of gaussian blur to increase stability.
+\item {\bf Crop filter} Input image is cropped to an explained region of interest.
+\item {\bf Blur filter} Cropped image is blurred by a low amount of Gaussian blur to increase stability.
 \item {\bf Color normalization filter} The RGB values of each pixels are normalized to $rgl$, $l=\frac{R+G+B}{3}$, $r=\frac{R}{3*l+c}$, $g=\frac{G}{3*l+c}$, where $c$ is a small constant to prevent division by zero.
 \item {\bf Feature sampler filter} A set of two filters sampling feature vectors from cropped image for the training of the current weak classifier. 
 \item {\bf Weak classifier filters} A set of filters equal to the number of weak classifiers in the models that combine feature extraction and classifier evaluation.
 \item {\bf Weak classifier extractors} A set of filters extracting calculated classifier values for training of the strong classifier.
-\item {\bf A training block} Due to high accuracy demands exhibited by trainer, and GPU limitation, the actual trainings performed on CPU. With feature extraction and weak classifier estimation being performed in parallel, the computetional demands of the algorithm itself are extremely low (more than 100K samples can be processed per second by our measurements). 
+\item {\bf A training block} Due to high accuracy demands exhibited by trainer, and GPU limitation, the actual trainings performed on CPU. With feature extraction and weak classifier estimation being performed in parallel, the computational demands of the algorithm itself are extremely low (more than 100K samples can be processed per second by our measurements). 
 \item {\bf A multi-texture blending filter} Unlike other filter,this one has only a simple passthrough shader, instead achieving summation of the classifier outputs from the previous stage by  enabling built-in OpenGL blending and rendering all the input texture onto a single output. 
-\item {\bf Position estimate block} This block uses output of the blend filter and claclulates the position update of an object. Uses CPU. 
+\item {\bf Position estimate block} This block uses output of the blend filter and calculates the position update of an object. Uses CPU. 
 \item {\bf Rectangle filter} This filter simply add the rectangle on the estimated object position. 
 \item {\bf Output} Output may be in form of the video file (movie encoder) or a screen output, or both. Since the CPU in this case is largely free of calculation, there is more than enough processing power for video compression. 
 \end{enumerate}
@@ -145,21 +176,17 @@ The following conclusions can be drawn:
 \item The proposed features, while sufficient in many cases to separate object from the local background ({{=fig=}}), are not very robust due to the fact that they employ data from a low  number of pixels which may be noisy. They are also sensitive to scale and rotation. This sensitivity, combined with the fact that it is impossible to hold the phone absolutely steady while acquiring a target object, lead to the lower overall accuracy. 
 \item Even with such limitations imposed by features and precision provided by GPU, the proposed learning algorithm can efficiently organize simple features to achieve object detection for the purposes of tracking, although the tracking is not very accurate ({{=fig=}}).  
 \item The resulting algorithm is efficient enough to run in near real-time (12-17 fps) with the number of weak classifiers capped at 15.
-\item However the simple position estimator suffers from the drawback of losing the tracked object when the movemet exceeds its search area, while expanding search area leads to reduced efficiency of the classifier, since it has to offset the larger number of errors. 
+\item However the simple position estimator suffers from the drawback of losing the tracked object when the movement exceeds its search area, while expanding search area leads to reduced efficiency of the classifier, since it has to offset the larger number of errors. 
 \item The bottleneck of the algorithm appears to be a number of selectors, growing with the number of features. Repeated data transfers fro GPU to CPU memory, coupled with multiple rendering operations per selector reduce performance drastically. Removal of the need for them should nearly double the frame rate.
-\item The learning algorithm is simple and efficient enough to bealmost unnoticeable in terms of computational and memory requirements when compared to feature extraction and especially selectors.
-\item The usage of online adaptive algorithms for tracking can actually decrease the tracker's quality, a fact mentioned in {{=ref=}} due to an effect called drifting, where a classifier essentially retrains itself to accept other objects by accumulating errors. Due to high adaptability of our algorithm on limited number of weak classifiers, and high sensitivity of the features used, this effect is quite prominent unless care is taken to avoid it. 
+\item The learning algorithm is simple and efficient enough to be almost unnoticeable in terms of computational and memory requirements when compared to feature extraction and especially selectors.
+\item The usage of online adaptive algorithms for tracking can actually decrease the tracker's quality, a fact mentioned in \cite{grabner2008} due to an effect called drifting, where a classifier essentially retrains itself to accept other objects by accumulating errors. Due to high adaptability of our algorithm on limited number of weak classifiers, and high sensitivity of the features used, this effect is quite prominent unless care is taken to avoid it. 
 \end{itemize}
 
 To conclude, while the proposed experimental application clearly shows the merit of our learning method as applied to the image processing tasks like object recognition and tracking due to its simplicity and efficiency, the application itself is of limited practical value due to several unresolved problems in implementation. As such, it can be considered a proof-of-concept application rather than a final product. 
 %: ----------------------- paths to graphics ------------------------
 
 % change according to folder and file names
-\ifpdf
-    \graphicspath{{X/figures/PNG/}{X/figures/PDF/}{X/figures/}}
-\else
-    \graphicspath{{X/figures/EPS/}{X/figures/}}
-\fi
+
 
 %: ----------------------- contents from here ------------------------
 
@@ -173,3 +200,4 @@ To conclude, while the proposed experimental application clearly shows the merit
 %: ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------
 
+computational

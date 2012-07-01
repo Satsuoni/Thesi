@@ -36,21 +36,22 @@
 \BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Overview}{section.4.1}% 36
 \BOOKMARK [1][]{section.4.2}{4.2 General-purpose computing on graphics processing units}{chapter.4}% 37
 \BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Open GL ES programmable graphic pipeline}{section.4.2}% 38
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 GPUImage programming library}{section.4.2}% 39
-\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Limitations}{section.4.2}% 40
-\BOOKMARK [1][]{section.4.3}{4.3 Modification of Pegasos algorithm for parallel processing}{chapter.4}% 41
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Modification description}{section.4.3}% 42
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Evaluation}{section.4.3}% 43
-\BOOKMARK [1][]{section.4.4}{4.4 Simple local image features}{chapter.4}% 44
-\BOOKMARK [1][]{section.4.5}{4.5 Tracking}{chapter.4}% 45
-\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Training regime}{section.4.5}% 46
-\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Position estimation}{section.4.5}% 47
-\BOOKMARK [1][]{section.4.6}{4.6 Resulting Application layout}{chapter.4}% 48
-\BOOKMARK [1][]{section.4.7}{4.7 Results overview}{chapter.4}% 49
-\BOOKMARK [0][]{chapter.5}{5 Evaluation of our algorithm in comparison to related algorithms}{}% 50
-\BOOKMARK [1][]{section.5.1}{5.1 Comparison to online SVM training algorithms: Pegasos and NORMA}{chapter.5}% 51
-\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Experimental results}{section.5.1}% 52
-\BOOKMARK [1][]{section.5.2}{5.2 Comparison to offline algorithm: AdaBoost}{chapter.5}% 53
-\BOOKMARK [1][]{section.5.3}{5.3 Comparison to the online AdaBoost}{chapter.5}% 54
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 55
-\BOOKMARK [0][]{chapter*.8}{References}{}% 56
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Open GL ES programmable graphic pipeline}{section.4.2}% 39
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 GPUImage programming library}{section.4.2}% 40
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 Limitations}{section.4.2}% 41
+\BOOKMARK [1][]{section.4.3}{4.3 Modification of Pegasos algorithm for parallel processing}{chapter.4}% 42
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Modification description}{section.4.3}% 43
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Evaluation}{section.4.3}% 44
+\BOOKMARK [1][]{section.4.4}{4.4 Simple local image features}{chapter.4}% 45
+\BOOKMARK [1][]{section.4.5}{4.5 Tracking}{chapter.4}% 46
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Training regime}{section.4.5}% 47
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Position estimation}{section.4.5}% 48
+\BOOKMARK [1][]{section.4.6}{4.6 Resulting Application layout}{chapter.4}% 49
+\BOOKMARK [1][]{section.4.7}{4.7 Results overview}{chapter.4}% 50
+\BOOKMARK [0][]{chapter.5}{5 Evaluation of our algorithm in comparison to related algorithms}{}% 51
+\BOOKMARK [1][]{section.5.1}{5.1 Comparison to online SVM training algorithms: Pegasos and NORMA}{chapter.5}% 52
+\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Experimental results}{section.5.1}% 53
+\BOOKMARK [1][]{section.5.2}{5.2 Comparison to offline algorithm: AdaBoost}{chapter.5}% 54
+\BOOKMARK [1][]{section.5.3}{5.3 Comparison to the online AdaBoost}{chapter.5}% 55
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 56
+\BOOKMARK [0][]{chapter*.12}{References}{}% 57
