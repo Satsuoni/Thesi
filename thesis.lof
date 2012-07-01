@@ -16,6 +16,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces PowerVR SGX GPU architecture schematics\relax }}{31}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Pyramidal Pegasos Algorithm\relax }}{34}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Graphic filter layout used for tracking\relax }}{41}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Some experimental results from tracking application\relax }}{42}{figure.4.6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental results comparing the performance of our algorithm to linear implementation of Pegasos and NORMA\relax }}{48}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Experimental results comparing the performance of our algorithm implementation of Pegasos and NORMA using Gaussian RBF\relax }}{49}{figure.5.2}

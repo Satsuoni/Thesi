@@ -170,11 +170,52 @@ The diagram on \figref{tracking} shows the resulting layout of the filters used 
 \end{enumerate}
 
 \section{Results overview}
-Some of the results of running sample application on the iPhone and attempting to define (segregate) and track various objects are illustrated on figure {{=fig=}}
+\begin{figure*}[t]
+    \centering
+\begin{subfigure}[b]{.45\linewidth}
+       \includegraphics[width=0.9\linewidth]{conf1}
+\label{startconf}
+        \caption{Starting confidence map}
+      \end{subfigure}%
+\hspace{.01\linewidth}
+\begin{subfigure}[b]{.45\linewidth}
+	 \includegraphics[width=0.9\linewidth]{conf2}
+       \label{endconf}
+      \caption{Converged confidence map}
+  
+	 \end{subfigure}%
+
+ \begin{subfigure}[c]{.45\linewidth}
+	   \includegraphics[width=0.9\linewidth]{track1}
+           \label{tracking1}
+           \caption{Tracking an object, starting position}
+ \end{subfigure}%
+\hspace{.01\linewidth}
+\begin{subfigure}[c]{.45\linewidth}
+    \includegraphics[width=0.9\linewidth]{track2}
+    \label{tracking2} 
+   \caption{Succesfully tracked an object}
+\end{subfigure}%
+
+\begin{subfigure}[c]{.45\linewidth}
+	   \includegraphics[width=0.9\linewidth]{tls1}
+\label{lss1}
+\caption{Tracking an ambiguous object}
+\end{subfigure}%
+\hspace{.01\linewidth}
+\begin{subfigure}[c]{.45\linewidth}
+	   \includegraphics[width=0.9\linewidth]{tls2}
+\label{lss2}
+\caption{ Tracking lost}
+\end{subfigure}%
+    \caption{Some experimental results from tracking application}
+    \label{trackim}
+\end{figure*}
+Some of the results of running sample application on the iPhone and attempting to define (segregate) and track various objects are illustrated on figure \figref{trackim}
 The following conclusions can be drawn:
 \begin{itemize}
-\item The proposed features, while sufficient in many cases to separate object from the local background ({{=fig=}}), are not very robust due to the fact that they employ data from a low  number of pixels which may be noisy. They are also sensitive to scale and rotation. This sensitivity, combined with the fact that it is impossible to hold the phone absolutely steady while acquiring a target object, lead to the lower overall accuracy. 
-\item Even with such limitations imposed by features and precision provided by GPU, the proposed learning algorithm can efficiently organize simple features to achieve object detection for the purposes of tracking, although the tracking is not very accurate ({{=fig=}}).  
+\item The proposed features, while sufficient in many cases to separate object from the local background (Fig. \ref{trackim}\subref{endconf}, Fig. \ref{trackim}\subref{tracking2}), are not very robust due to the fact that they employ data from a low  number of pixels which may be noisy. They are also sensitive to scale and rotation. This sensitivity, combined with the fact that it is impossible to hold the phone absolutely steady while acquiring a target object, lead to the lower overall accuracy. 
+\item Even with such limitations imposed by features and precision provided by GPU, the proposed learning algorithm can efficiently organize simple features to achieve object detection for the purposes of tracking, although the tracking is not very accurate (Fig. \ref{trackim}\subref{lss2}).  
 \item The resulting algorithm is efficient enough to run in near real-time (12-17 fps) with the number of weak classifiers capped at 15.
 \item However the simple position estimator suffers from the drawback of losing the tracked object when the movement exceeds its search area, while expanding search area leads to reduced efficiency of the classifier, since it has to offset the larger number of errors. 
 \item The bottleneck of the algorithm appears to be a number of selectors, growing with the number of features. Repeated data transfers fro GPU to CPU memory, coupled with multiple rendering operations per selector reduce performance drastically. Removal of the need for them should nearly double the frame rate.

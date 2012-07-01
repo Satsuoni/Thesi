@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{avidan}
+{\sc S.~Avidan}.
+\newblock {\bf Ensemble tracking}.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, {\bf 29}(2):261--271, 2007.
+
 \bibitem{bertelli2011kernelized}
 {\sc L.~Bertelli, T.~Yu, D.~Vu, and B.~Gokturk}.
 \newblock {\bf Kernelized structural SVM learning for supervised object
@@ -36,6 +42,10 @@
 {\sc Corinna Cortes and Vladimir Vapnik}.
 \newblock {\bf Support-Vector Networks}.
 \newblock {\em Mach. Learn.}, {\bf 20}(3):273--297, September 1995.
+
+\bibitem{frafra}
+{\sc A.~Frank and A.~Asuncion}.
+\newblock {\bf {UCI} Machine Learning Repository}, 2010.
 
 \bibitem{adaor}
 {\sc Y.~Freund and R.~Schapire}.

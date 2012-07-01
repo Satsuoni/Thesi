@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: 0_frontmatter/abstract.aux
-A level-1 auxiliary file: 0_frontmatter/dedication.aux
 A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
 A level-1 auxiliary file: 0_frontmatter/glossary.aux
 A level-1 auxiliary file: 1_introduction/introduction.aux
@@ -15,45 +14,45 @@ The style file: Latex/Classes/PhDbiblio-bold.bst
 Database file #1: 9_backmatter/references.bib
 Warning--empty institution in Boostsvm
 Warning--empty journal in rop
-You've used 27 entries,
+You've used 29 entries,
             2170 wiz_defined-function locations,
-            686 strings with 8336 characters,
-and the built_in function-call counts, 10441 in all, are:
-= -- 1060
-> -- 380
+            694 strings with 8491 characters,
+and the built_in function-call counts, 10995 in all, are:
+= -- 1112
+> -- 400
 < -- 14
-+ -- 153
-- -- 122
-* -- 762
-:= -- 1567
-add.period$ -- 89
-call.type$ -- 27
-change.case$ -- 116
++ -- 161
+- -- 128
+* -- 804
+:= -- 1654
+add.period$ -- 94
+call.type$ -- 29
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 499
-empty$ -- 864
-format.name$ -- 122
-if$ -- 2274
+cite$ -- 31
+duplicate$ -- 522
+empty$ -- 916
+format.name$ -- 128
+if$ -- 2388
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 26
-newline$ -- 137
-num.names$ -- 54
-pop$ -- 166
+int.to.str$ -- 29
+missing$ -- 27
+newline$ -- 146
+num.names$ -- 58
+pop$ -- 178
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 122
 quote$ -- 0
-skip$ -- 342
+skip$ -- 358
 stack$ -- 0
-substring$ -- 725
-swap$ -- 211
+substring$ -- 760
+swap$ -- 218
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 106
+type$ -- 114
 warning$ -- 2
-while$ -- 105
-width$ -- 29
-write$ -- 303
+while$ -- 111
+width$ -- 31
+write$ -- 322
 (There were 2 warnings)

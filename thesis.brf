@@ -43,8 +43,9 @@
 \backcite {viola}{{35}{4.4}{section.4.4}}
 \backcite {LBP}{{35}{4.4}{section.4.4}}
 \backcite {OnlineBoost}{{36}{4.5}{section.4.5}}
+\backcite {avidan}{{36}{4.5}{section.4.5}}
 \backcite {OnlineBoost}{{36}{4.5}{section.4.5}}
-\backcite {grabner2008}{{40}{4.7}{section.4.7}}
+\backcite {grabner2008}{{40}{4.7}{figure.4.6}}
 \backcite {Pegasos}{{43}{5.1}{section.5.1}}
 \backcite {Norma}{{43}{5.1}{section.5.1}}
 \backcite {Forest}{{43}{5.1}{section.5.1}}
@@ -52,6 +53,7 @@
 \backcite {Norma}{{44}{3}{Item.24}}
 \backcite {Norma}{{44}{5}{Item.26}}
 \backcite {Forest}{{45}{5.1.1}{subsection.5.1.1}}
+\backcite {frafra}{{46}{5.2}{figure.5.3}}
 \backcite {OnlineBoost}{{46}{5.3}{figure.5.4}}
 \backcite {Pegasos}{{51}{6}{chapter.6}}
 \backcite {Norma}{{51}{6}{chapter.6}}
