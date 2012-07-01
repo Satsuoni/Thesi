@@ -1,20 +1,30 @@
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
-
+\ifpdf
+    \graphicspath{{2/figures/PNG/}{2/figures/PDF/}{2/figures/}}
+\else
+    \graphicspath{{2/figures/EPS/}{2/figures/}}
+\fi
 \chapter{Related works} % top level followed by section, subsection
 \label{Chap2}
 Both the SVM and boosting-based learning algorithms, and their applications to various tasks in image processing are extremely widespread. In this chapter we outline the works most closely related to the presented methods, since the size constraints of the paper do not allow for a detailed review of this area. 
 % ----------------------- contents from here ------------------------
 \section{Overview}
-In general, classification is a problem of identifying to which set, or cathegory belongs the next observation. The cathegories may be given beforehand, or derived from the data itself by application of a chosen clustering method. Usually, a certain set of data samples is given beforehand (training dataset), which serves as a basis by which the membership of the new sample is determined. The data samples are transformed into a set of explanatory variables, or features, and from them the cathegory-defining model, or classifier, is built.
+In general, classification is a problem of identifying to which set, or category belongs the next observation. The categories may be given beforehand, or derived from the data itself by application of a chosen clustering method. Usually, a certain set of data samples is given beforehand (training dataset), which serves as a basis by which the membership of the new sample is determined. The data samples are transformed into a set of explanatory variables, or features, and from them the category-defining model, or classifier, is built.
 
 While the distinction between offline and online algorithms for training classifiers is not clearly defined, it is usually accepted that the offline systems have random access to all training data at the same time, and that the model resulting from this data should asymptotically converge to the equilibrium. In this setting, the training time is less important.  On the other hand, online systems have only limited access to the data, usuallly to a single sample at a time, or a few consecutive samples, and it is preferrable for the learning iteration to run in the real time, i.e. that the update iteration should take less time then the acquisition of the next data sample. 
 
-There are several types of classifiers, such as bunary or multiclass, linear, nonlinear and cathegorical, etc. In this paper, we focus on the linear binary classifiers, which can be used for nonlinear classification by transforming feature space. 
+There are several types of classifiers, such as binary or multiclass, linear, nonlinear and categorical, etc. In this paper, we focus on the linear binary classifiers, which can be used for nonlinear classification by transforming feature space. 
 \section{Offline classification algorithms}
 
 \subsection{Support vector machines}
-The support vector machines are a class of linear  binary classifiers that attempt to maximize the minimal distance (margin) between classes, i.e. to construct a hyperplane in the feature space that separates the two classes and is located, intuitively, exactly in the "middle" between them (see {{=fig=}}). The mathematical formulation for this problem is: given a set of training samples $\vec{x}_i$ and associated labels $y_i$, $i\in [1..n]$, minimize in$\vec{w},b$ $\frac{1}{2}||\vec{w}||^2$ subject to $y_i(\vec{w}\vec{x}_i-b)\ge 1$. Introducing Lagrangian multiplers $\alpha_i$, the primal formulation then becomes as follows: 
+\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.5\textwidth]{margin_sep_lr}
+		\caption[Maximum margin separation]{Two classes separated by a maximum margin hyperplane}
+		\label{Margin}
+	\end{figure}
+The support vector machines are a class of linear  binary classifiers that attempt to maximize the minimal distance (margin) between classes, i.e. to construct a hyperplane in the feature space that separates the two classes and is located, intuitively, exactly in the "middle" between them (see \figref{Margin}). The mathematical formulation for this problem is: given a set of training samples $\vec{x}_i$ and associated labels $y_i$, $i\in [1..n]$, minimize in$\vec{w},b$ $\frac{1}{2}||\vec{w}||^2$ subject to $y_i(\vec{w}\vec{x}_i-b)\ge 1$. Introducing Lagrangian multiplers $\alpha_i$, the primal formulation then becomes as follows: 
 \begin{equation}
 \label{simplePrimal}
 \min_{\vec{w},b} \max_{\alpha_i}\left\{ \frac{1}{2}||\vec{w}||^2 -\sum_{i=1}^{n}\alpha_i(y_i(\vec{w}\vec{x}_i-b)-1)\right\}
@@ -32,14 +42,14 @@ The dual formulation of the above problem
 \end{equation}
 subject to $\alpha_i \ge 0$,where, in original linear case, $k(\vec{x_i},\vec{x_j})=\vec{x_i}\cdot \vec{x_j}$, $\cdot$ denoting an inner product, and $\vec{w}=\sum_{i=1}^{n}\alpha_i y_i \vec{x}_i$. In this formulation, data points $\vec{x}_i$ for which $\alpha_i>0$ are called the support vectors, giving rise to the name of the method. Intuitively, these are the points that lie on the margin hyperplanes. 
 
-Original {{=ref=}} formulation assumed that the data was linearly separable, and couldn't be solved for the noisy data. One of the most important results related to this version of classifier was that, when solvable, it was shown {{=ref=}}  to minimize the theoretical upper bound on the testing error rate. This bound is related to the VC dimension of the classifier, and  governs the relation between the capacity of a learning machine and its performance. The bound is as follows: if the classifier with parameters $\vec{\alpha}$ achieves empirical error rate, i.e. error rate on a set used for training, $R_{emp}(\vec{\alpha})$, then with probability $1-\eta$, the following bound holds: 
+Original (\cite{vapnik92}) formulation assumed that the data was linearly separable, and couldn't be solved for the noisy data. One of the most important results related to this version of classifier was that, when solvable, it was shown (\cite{Vapnik95})  to minimize the theoretical upper bound on the testing error rate. This bound is related to the VC dimension of the classifier, and  governs the relation between the capacity of a learning machine and its performance. The bound is as follows: if the classifier with parameters $\vec{\alpha}$ achieves empirical error rate, i.e. error rate on a set used for training, $R_{emp}(\vec{\alpha})$, then with probability $1-\eta$, the following bound holds: 
 \begin{equation}
 \label{VCbound}
 R(\vec{\alpha})\le R_{emp}(\vec{\alpha})+\sqrt{\left( \frac{h(log(2l/h)+1)-log(\eta/4)}{l}\right)}
 \end{equation}
 where $l$ is the number of training samples and $h$ is the VC dimension of a classifier function, defined as the number maximum cardinality of a data point set that can be shattered (separated for any assignment of labels $y\in{-1;1}$ to data points). For example, a linear classifier of dimension $n$ has VC dimension of $n+1$.
 
-SVM were then originally derived as a  family of classifiers minimizing right-hand part of {=equation=}, thus minimizing the expected risk and generalization error. The original classification, however, was too rigid  and not very usable on sets of data from the real world, so in {=ref=}, \eqrefr{simplePrimal} was rewritten,  replacing hard constraints with a loss function:
+SVM were then originally derived as a  family of classifiers minimizing right-hand part of \eqrefr{VCbound}, thus minimizing the expected risk and generalization error. The original classification, however, was too rigid  and not very usable on sets of data from the real world, so in \cite{SVM}, \eqrefr{simplePrimal} was rewritten,  replacing hard constraints with a loss function:
 
 \begin{equation}
 \label{expandedPrimal}
@@ -58,13 +68,27 @@ When using \eqrefr{Hingeloss}, dual form of \eqrefr{expandedPrimal} is the same 
 
 \subsubsection{Using kernel trick to create nonlinear classifier}
 
-It is easy to see that all of the above formulas can be expressed in terms of linear combinations of kernel function $k(\cdot,\cdot)$ on the input data samples and coefficients $\alpha_i$. For instance, confidence function of the classifier $f(\vec{x},\vec{w})=\vec{w}*\vec{x}$  can be replaced with $f(\vec{x};\{\vec{x_i},\alpha_i\,y_i\})=\sum_{i=1}^{n}\alpha_i y_i k(\vec{x},\vec{x_i})$. The linear function $k(\vec{x_i},\vec{x_j})=\vec{x_i}\cdot \vec{x_j}$ of the original formulation can then be replaced by any function satisfying Mercers condition, i.e. any positive definite kernel. There also exists a body of research (such as {{=ref=}}) that deals with practical applications of non-positive definite kernels (such as well known sigmoid function), but that lies beyond the scope of a current work. 
+It is easy to see that all of the above formulas can be expressed in terms of linear combinations of kernel function $k(\cdot,\cdot)$ on the input data samples and coefficients $\alpha_i$. For instance, confidence function of the classifier $f(\vec{x},\vec{w})=\vec{w}*\vec{x}$  can be replaced with $f(\vec{x};\{\vec{x_i},\alpha_i\,y_i\})=\sum_{i=1}^{n}\alpha_i y_i k(\vec{x},\vec{x_i})$. The linear function $k(\vec{x_i},\vec{x_j})=\vec{x_i}\cdot \vec{x_j}$ of the original formulation can then be replaced by any function satisfying Mercer's condition, i.e. any positive definite kernel. There also exists a body of research (such as \cite{negative}) that deals with practical applications of non-positive definite kernels (such as well known sigmoid function), but that lies beyond the scope of a current work. 
 
- The Mercers condition, in essence, guarantees that there exists a feature space $V$, that has an operation of inner product defined in it,  and a map from the input data space $S$, $\phi : S \leftarrow V$so that kernel function between two vectors $\vec{x},\vec{y} \in S$ is equivalent to inner product: $k(\vec({x},\vec{y})=\phi(\vec{x})\cdot \phi(\vec{y})$. Essentially, the kernel trick maps input vectors $\vec{x_i}$ into larger-dimensional feature vector space $V$ , where, hopefully, the data becomes linearly separable (see {{=fig=}} for illustration).
+ The Mercer's condition, in essence, guarantees that there exists a feature space $V$, that has an operation of inner product defined in it,  and a map from the input data space $S$, $\phi : S \leftarrow V$so that kernel function between two vectors $\vec{x},\vec{y} \in S$ is equivalent to inner product: $k(\vec({x},\vec{y})=\phi(\vec{x})\cdot \phi(\vec{y})$. Essentially, the kernel trick maps input vectors $\vec{x_i}$ into larger-dimensional feature vector space $V$ , where, hopefully, the data becomes linearly separable (see {{=fig=}} for illustration).
 
-This techniques allows using SVM as nonlinear classifier, and greatly expands the  variety of possible applications since as long as the kernel function is defined, the input vectors $\vec{x_i}$ do not even have to be numbers,a nd can instead be words or area descriptors in an image ({{=ref=]}). However, its application also increases the costs associated with learning and using the classifier, since instead of a single vector $\vec{w}$ we have to store all nonzero $\alpha_i$ and associated $\vec{x}_i$, and the increased dimensionality of the feature space gurantees the larger possible amount of support vectors as compared to the linear formulation. Also, the same increased dimensionality increases the VC dimension of the classifier, raising bounds on the generalization error, i.e. increasing the risk of overfitting. In addition, the kernel formulation makes the primal problem much harder to solve, biasing the existing research towards quadratic dual formulation, although the methods of dealing with it exist and are introduced in  section \ref{NORMAIntro} below.
-
-The most commonly used kernels are listed in {{=table=}}.
+This techniques allows using SVM as nonlinear classifier, and greatly expands the  variety of possible applications since as long as the kernel function is defined, the input vectors $\vec{x_i}$ do not even have to be numbers, and can instead be words or area descriptors in an image (\cite{bertelli2011kernelized}). However, its application also increases the costs associated with learning and using the classifier, since instead of a single vector $\vec{w}$ we have to store all nonzero $\alpha_i$ and associated $\vec{x}_i$, and the increased dimensionality of the feature space guarantees the larger possible amount of support vectors as compared to the linear formulation. Also, the same increased dimensionality increases the VC dimension of the classifier, raising bounds on the generalization error, i.e. increasing the risk of overfitting. In addition, the kernel formulation makes the primal problem much harder to solve, biasing the existing research towards quadratic dual formulation, although the methods of dealing with it exist and are introduced in  section \ref{NORMAIntro} below.
+\begin{table}
+\centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Kernel name                 & Function \\ \hline
+        Linear                      & $\vec{x}\cdot \vec{y}$       \\ \hline
+        Polynomial kernel           & $(\vec{x}\cdot \vec{y})^d$        \\ \hline
+        Polynomial kernel with bias & $(\vec{x}\cdot \vec{y}+b)^d$        \\ \hline
+        Gaussian RBF                & $e^{-\gamma||\vec{x}-\vec{y}||_2}$         \\  \hline
+        Hyperbolic tangent          & $tanh(k\vec{x}\cdot \vec{y}+c)$        \\
+        \hline
+    \end{tabular}
+\caption[List of SVM kernel functions]{List of the most popular SVM kernel functions}
+\label{Kernels}
+\end{table}
+The most commonly used kernels are listed in table \ref{Kernels}.
 
 
 %V. Vapnik and A. Chervonenkis. "On the uniform convergence of relative frequencies of events to their probabilities." 
@@ -73,10 +97,10 @@ The most commonly used kernels are listed in {{=table=}}.
 Most common methods for SVM training deal with the solution to the \eqrefr{simpleDual}, and as such are usually applicable to the Quadratic Programming problems in general. Several classes of such silution techniques should be mentioned in this overview. 
 
 {\bf Interior point methods}
-IP methods (for example, {{=ref=}}) replace linear constraints of the primal with a barrier function, similar to the IP methods for linear programming.  The result is a sequence of unconstrained problems which can be optimized very efficiently using Newton or Quasi-Newton methods. The advantage of IP methods is that they achive rapid convergence to a given accuracy bound in terms of a number of iterations. Unfortunately, they typically require run time which is cubic in the number of data samples $n$. Moreover, the memory requirements of IP  very large, so such methods are not suitable for the training sets with large number of samples.
+IP methods (for example, \cite{boyd}) replace linear constraints of the primal with a barrier function, similar to the IP methods for linear programming.  The result is a sequence of unconstrained problems which can be optimized very efficiently using Newton or Quasi-Newton methods. The advantage of IP methods is that they achieve rapid convergence to a given accuracy bound in terms of a number of iterations. Unfortunately, they typically require run time which is cubic in the number of data samples $n$. Moreover, the memory requirements of IP  very large, so such methods are not suitable for the training sets with large number of samples.
 
 {\bf Segmentation-based methods}
-To overcome the quadratic memory requirement of IP methods, decomposition methods such as  as well-known SMO {{=ref=}} and SVM-Light {{=ref=}} work with dual variables $\alpha_i$, constrained by a set of conditions that are derived from the current state of the solution, and thus change every iteration.  In the extreme case, the active set consists of a single constraint. Therefore, the larger quadratic problem is segmented into a number of smaller ones, SMO emplying the smalles subset of just two variabes being optimized at a time. While algorithms of  this family are simple to implement and have general asymptotic convergence properties, the time complexity of  is  still typically super linear in the training set size $n$. 
+To overcome the quadratic memory requirement of IP methods, decomposition methods such as  as well-known SMO (\cite{platt}) and SVM-Light (\cite{svmlight}) work with dual variables $\alpha_i$, constrained by a set of conditions that are derived from the current state of the solution, and thus change every iteration.  In the extreme case, the active set consists of a single constraint. Therefore, the larger quadratic problem is segmented into a number of smaller ones, SMO employing the smallest subset of just two variables being optimized at a time. While algorithms of  this family are simple to implement and have general asymptotic convergence properties, the time complexity of  is  still typically super linear in the training set size $n$. 
 
 Some of the decomposition methods can be adapted to the online learning setting, but the results are typically inferior in terms of convergence rate and accuracy to the methods specifically developed for the online setting.
 
@@ -131,7 +155,7 @@ In this section therefore, we introduce the algorithms specifically developed or
 In this section, we review two algorithms for online SVM training that have a direct bearing on out work. Both of these algorithms use a variant of the Stochastic Gradient Descent in order to upadate the solution on each iteration. 
 \subsubsection{NORMA}
 \label{NORMAIntro}
-NORMA {{=ref=}} is a generic method for onilne risk minimization using stochastic gradient descent, with a particular focus on its application to kernel-based Support Vector Machines and regression. In the founding paper,  Kivinen et.al. both describe the method and give theoretical  bounds on its accuracy and convergence rate. They show that the convergence rate of NORMA is independent of the size of the dataset, if a limited dataset is used, and is instead of the order $O(\frac{X}{\epsilon^2})$, where $X$ is the bound on the absolute value of the kernel function, and $\epsilon$ is an error rate. 
+NORMA (\cite{Norma}) is a generic method for online risk minimization using stochastic gradient descent, with a particular focus on its application to kernel-based Support Vector Machines and regression. In the founding paper,  Kivinen et.al. both describe the method and give theoretical  bounds on its accuracy and convergence rate. They show that the convergence rate of NORMA is independent of the size of the dataset, if a limited dataset is used, and is instead of the order $O(\frac{X}{\epsilon^2})$, where $X$ is the bound on the absolute value of the kernel function, and $\epsilon$ is an error rate. 
 They also show that the truncation error resulting from removing older kernel expansion vectors decreases exponentially with the number of preserved vectors-coefficient pairs, as long as the kernel fuction values over the space of input data samples are bounded. 
 
 The agorithm itself attempts to minimize the primal formulation of an SVM problem (\eqrefr{expandedPrimal}) rewritten to allow the usage of the kernel trick. To do that, the concept of Reproducible Kernel Hilbert Spaces (RKHS) with defined inner product is used to replace $\vec{w}$ of the linear SVM with the function $f$ int the RKHS $\mathscr{H}$  defined by kernel $k(\cdot,\cdot)$
@@ -147,7 +171,7 @@ However, in the online setting, assuming that a single data sample $\vec{x}_t$ a
  \min_{f \in \mathscr{H}} \left\{ \frac{\lambda}{2}||f||_\mathscr{H} ^2 +l(f(\vec{x}_t,y_t))\right\}
 \end{equation}
 
-The above expression is then minimalized by utilising a simple subgradient descent (gradient if the function $l$ is differentiable) with a learning rate $\eta_t$, i.e., on each iteration the function $f$ is updated:
+The above expression is then minimized by utilizing a simple subgradient descent (gradient if the function $l$ is differentiable) with a learning rate $\eta_t$, i.e., on each iteration the function $f$ is updated:
 \begin{equation*}
 f_{t+1}=f_t-\eta_{t} \partial_f \left( \frac{\lambda}{2}||f||_\mathscr{H} ^2 +l(f(\vec{x}_t,y_t))\right) 
 \end{equation*}
@@ -161,7 +185,7 @@ Since as long as the kernel used satisfies Mercer's condition, function $f$ can 
 \label{Fexpansion}
 f(\vec{x})=\sum_{i=1}^{t}\alpha_i k(\vec{x},\vec{x_i})
 \end{equation}
-Substituting \eqrefr(Fexpansion) into \eqrefr{NORMAUpdate} , the final formula dealing with the updates of $\alpha_i$ becomes:
+Substituting \eqrefr{Fexpansion} into \eqrefr{NORMAUpdate} , the final formula dealing with the updates of $\alpha_i$ becomes:
 
 $$
 \alpha_t=-\eta_{t}l'(f(\vec{x}_t,y_t) \quad {i=t}
@@ -172,27 +196,27 @@ $$
 Here one of the drawbacks of the kernel bases-methods becomes obvious, since it can be seen that on each iteration an additional kernel expansion vector is added, quickly increasing the storage requirements.
 
 \subsubsection{Pegasos}
-Pegasos algorithm, introduced in {{=ref=}}, is conceptually similar to the NORMA, with two key differences,
+Pegasos algorithm, introduced in \cite{Pegasos}, is conceptually similar to the NORMA, with two key differences,
 one being that it incorporates an additional parameter $k$, which denotes the number of input samples accepted at a single iteration, and averages the loss function in \eqrefr{kernelPrimalInst} over $k$. The other key difference is the additional scaling step after each iteration, which drastically increases the convergence rate.
 $$
 f_{t+1}=min(1,\frac{1}{\sqrt{\lambda ||f_{t+0.5}||_{\mathscr{H}}^2}})f_{t+0.5}
 $$
-Using these steps allow Pegasos to effectively use agressive update schedule $\eta_t=\frac{1}{t}$, and achieve conergence rates proportional to $O(\frac{1}{\epsilon})$. 
-Unlike NORMA, pegasos is primarily oriented toward linear SVM optimization. This fact, combined with the increased convergence rate and simplicity of implementation lead to us adopting it over NORMA as a basis of our method. 
+Using these steps allow Pegasos to effectively use agressive update schedule $\eta_t=\frac{1}{t}$, and achieve convergence rates proportional to $O(\frac{1}{\epsilon})$. 
+Unlike NORMA, Pegasos is primarily oriented toward linear SVM optimization. This fact, combined with the increased convergence rate and simplicity of implementation lead to us adopting it over NORMA as a basis of our method. 
 
 \subsection {Online boosting}
 
-Online boosting algorithms, such as the ones presented in {{=ref=}}, {{=ref=}},  are a modification of AdaBoost approach with the exact error rate of the classifier $\epsilon_t$ being replaced with the online  estimate $\tilde{\epsilon_t}$ that is updated on each iteration. In essense, they propose rerunning AdaBoost algorithm on limited subsets of weak classifiers called selectors on each iteration. Since this method is not essential to the understanding of our proposed algorithm, we shall refrain from desribing it in further detail here. 
+Online boosting algorithms, such as the ones presented in \cite{grabner2006}, \cite{grabner2008},  are a modification of AdaBoost approach with the exact error rate of the classifier $\epsilon_t$ being replaced with the online  estimate $\tilde{\epsilon_t}$ that is updated on each iteration. In essence, they propose rerunning AdaBoost algorithm on limited subsets of weak classifiers called selectors on each iteration. Since this method is not essential to the understanding of our proposed algorithm, we shall refrain from describing it in further detail here. 
 \section {Overview of applications}
 Below are several examples of the practical applications of the described algorithms. While the applications for large scale and online SVM learning and boosting are spanning most of the areas of modern research that deal with large amounts of data, the examples presented below are most relevant to our study topic. 
 \begin{itemize}
 \item {\bf Object recognition}
 
-As mentioned in {{=ref=}} and briefly described in {{=ref=}}, the above mentioned methods or theor derivatives can be used to quickly  and adaptively organize various image features (HOG in the case of  {{=ref=}}, or an ensemble of simple features in  {{=ref=}}) to reliably detect certain objects. The adaptive nature of such algorithms allows the detection to remain stable even for an object with changing form. 
+As mentioned in \cite{fast} and briefly described in \cite{viola}, the above mentioned methods or their derivatives can be used to quickly  and adaptively organize various image features (HOG in the case of  \cite{fast}, or an ensemble of simple features in  \cite{viola}) to reliably detect certain objects. The adaptive nature of such algorithms allows the detection to remain stable even for an object with changing form. 
 \item {\bf Object tracking}
-Similar to above, only in this case the original position of an object is given beforehand and has to be updated each frame as it moves.As shown in {{=ref=}}, online boosting for simple features, in particular, seems to be well suited for such a task.
+Similar to above, only in this case the original position of an object is given beforehand and has to be updated each frame as it moves.As shown in \cite{grabner2006}, online boosting for simple features, in particular, seems to be well suited for such a task.
 \item {\bf Text classification}
-Text classification, i.e. the task of defining whether the text belongs to a certain cathegory or not, often has to be updates online, as the user inserts new texts or updates old labels. The online SVM-based methods are well suited for such tasks both due to adaptability and their ability to process large amounts of data easily. Due to near-linearity of many text classification based tasks, Pegasos is better suited to such applications than Norma.
+Text classification, i.e. the task of defining whether the text belongs to a certain category or not, often has to be updates online, as the user inserts new texts or updates old labels. The online SVM-based methods are well suited for such tasks both due to adaptability and their ability to process large amounts of data easily. Due to near-linearity of many text classification based tasks, Pegasos is better suited to such applications than Norma.
 \item {\bf Advertisement selection}
 Once again, a modification of the above mentioned text classification, this application deals with determining whether a certain link is relevant or not to a particular user based on his history of previous searches and network surfing. 
 \end{itemize}

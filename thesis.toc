@@ -1,6 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{List of Figures}{vii}{chapter*.2}
 \contentsline {chapter}{List of Tables}{ix}{chapter*.3}
+\contentsline {chapter}{Glossary}{xi}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Aims of research}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Overview of common methods}{2}{section.1.2}
@@ -10,17 +11,17 @@
 \contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Offline classification algorithms}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Support vector machines}{6}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Using kernel trick to create nonlinear classifier}{7}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Common methods for offline SVM training}{8}{subsubsection.2.2.1.2}
-\contentsline {subsection}{\numberline {2.2.2}Boosting}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}AdaBoost}{10}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Other boosting algorithms}{11}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Online classification algorithms}{11}{section.2.3}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Using kernel trick to create nonlinear classifier}{8}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Common methods for offline SVM training}{9}{subsubsection.2.2.1.2}
+\contentsline {subsection}{\numberline {2.2.2}Boosting}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}AdaBoost}{11}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Other boosting algorithms}{12}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Online classification algorithms}{12}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Online SVM}{12}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}NORMA}{12}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Pegasos}{13}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Pegasos}{14}{subsubsection.2.3.1.2}
 \contentsline {subsection}{\numberline {2.3.2}Online boosting}{14}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Overview of applications}{14}{section.2.4}
+\contentsline {section}{\numberline {2.4}Overview of applications}{15}{section.2.4}
 \contentsline {chapter}{\numberline {3}Description of the proposed two-step algorithm}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Derivation of the algorithm}{17}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Drawbacks of the existing online algorithms}{17}{subsection.3.1.1}
@@ -53,3 +54,4 @@
 \contentsline {section}{\numberline {5.2}Comparison to offline algorithm: AdaBoost}{40}{section.5.2}
 \contentsline {section}{\numberline {5.3}Comparison to the online AdaBoost}{40}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}
+\contentsline {chapter}{References}{47}{chapter*.8}

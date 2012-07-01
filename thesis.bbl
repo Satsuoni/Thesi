@@ -1,0 +1,106 @@
+\begin{thebibliography}{10}
+
+\bibitem{bertelli2011kernelized}
+{\sc L.~Bertelli, T.~Yu, D.~Vu, and B.~Gokturk}.
+\newblock {\bf Kernelized structural SVM learning for supervised object
+  segmentation}.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 2153--2160. IEEE, 2011.
+
+\bibitem{Forest}
+{\sc J.~Blackard}.
+\newblock {\bf {Comparative accuracies of artificial neural networks and
+  discriminant analysis in predicting forest cover types from cartographic
+  variables}}.
+\newblock {\em Computers and Electronics in Agriculture}, {\bf 24}(3):131--151,
+  December 1999.
+
+\bibitem{vapnik92}
+{\sc B.E. Boser, I.M. Guyon, and V.N. Vapnik}.
+\newblock {\bf A training algorithm for optimal margin classifiers}.
+\newblock In {\em Proceedings of the fifth annual workshop on Computational
+  learning theory}, pages 144--152. ACM, 1992.
+
+\bibitem{boyd}
+{\sc S.P. Boyd and L.~Vandenberghe}.
+\newblock {\em Convex optimization}.
+\newblock Cambridge Univ Pr, 2004.
+
+\bibitem{SVM}
+{\sc Corinna Cortes and Vladimir Vapnik}.
+\newblock {\bf Support-Vector Networks}.
+\newblock {\em Mach. Learn.}, {\bf 20}(3):273--297, September 1995.
+
+\bibitem{grabner2006}
+{\sc H.~Grabner and H.~Bischof}.
+\newblock {\bf On-line boosting and vision}.
+\newblock In {\em Computer Vision and Pattern Recognition, 2006 IEEE Computer
+  Society Conference on}, ~{\bf 1}, pages 260--267. IEEE, 2006.
+
+\bibitem{grabner2008}
+{\sc H.~Grabner, C.~Leistner, and H.~Bischof}.
+\newblock {\bf Semi-supervised on-line boosting for robust tracking}.
+\newblock {\em Computer Vision--ECCV 2008}, pages 234--247, 2008.
+
+\bibitem{OnlineBoost}
+{\sc M.~Grabner H.~Grabner and H.~Bischof}.
+\newblock {\bf Real-time Tracking via On-line Boosting}.
+\newblock In {\em Proceedings British Machine Vision Conference (BMVC), volume
+  1}, pages 47--56, 2006.
+
+\bibitem{svmlight}
+{\sc T.~Joachims}.
+\newblock {\bf Svmlight: Support vector machine}.
+\newblock {\em SVM-Light Support Vector Machine http://svmlight. joachims.
+  org/, University of Dortmund}, {\bf 19}, 1999.
+
+\bibitem{Norma}
+{\sc Jyrki Kivinen, Alexander~J. Smola, and Robert~C. Williamson}.
+\newblock {\bf Online learning with kernels.}
+\newblock {\em IEEE Transactions on Signal Processing}, {\bf 52}(8):2165--2176,
+  2004.
+
+\bibitem{negative}
+{\sc C.S. Ong, X.~Mary, S.~Canu, and A.J. Smola}.
+\newblock {\bf Learning with non-positive kernels}.
+\newblock In {\em Proceedings of the twenty-first international conference on
+  Machine learning}, page~81. ACM, 2004.
+
+\bibitem{platt}
+{\sc J.C. Platt}.
+\newblock {\bf Using analytic QP and sparseness to speed training of support
+  vector machines}.
+\newblock {\em Advances in neural information processing systems}, pages
+  557--563, 1999.
+
+\bibitem{Pegasos}
+{\sc Shai Shalev-Shwartz, Yoram Singer, and Nathan Srebro}.
+\newblock {\bf Pegasos: Primal Estimated sub-GrAdient SOlver for SVM}.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, ICML '07, pages 807--814, New York, NY, USA, 2007. ACM.
+
+\bibitem{grabner2009}
+{\sc S.~Stalder, H.~Grabner, and L.~Van~Gool}.
+\newblock {\bf Beyond semi-supervised tracking: Tracking should be as simple as
+  detection, but not simpler than recognition}.
+\newblock In {\em Computer Vision Workshops (ICCV Workshops), 2009 IEEE 12th
+  International Conference on}, pages 1409--1416. IEEE, 2009.
+
+\bibitem{viola}
+{\sc P.~Viola and M.J. Jones}.
+\newblock {\bf Robust real-time face detection}.
+\newblock {\em International journal of computer vision}, {\bf 57}(2):137--154,
+  2004.
+
+\bibitem{Vapnik95}
+{\sc V.N. Vladimir and V.~Vapnik}.
+\newblock {\bf The nature of statistical learning theory}, 1995.
+
+\bibitem{fast}
+{\sc R.G.J. Wijnhoven and BV~ViNotion}.
+\newblock {\bf Fast Training of Object Detection using Stochastic Gradient
+  Descent}.
+\newblock In {\em 2010 International Conference on Pattern Recognition}, pages
+  424--427. IEEE, 2010.
+
+\end{thebibliography}
