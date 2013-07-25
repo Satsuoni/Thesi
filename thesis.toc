@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {2.2.4}Other boosting algorithms}{12}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Online classification algorithms}{12}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Online SVM}{12}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}NORMA}{12}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}NORMA}{13}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Pegasos}{14}{subsubsection.2.3.1.2}
 \contentsline {subsection}{\numberline {2.3.2}Online boosting}{14}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Overview of applications}{15}{section.2.4}
@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {3.2}Description of the resulting algorithm}{21}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Algorithm description}{21}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Possible modifications}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Comparison to other algorithms}{26}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Comparison to other algorithms}{25}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Application of proposed method to object tracking on a mobile device}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Resources available on the mobile device: iPhone 4S}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Overview}{27}{subsection.4.1.1}
@@ -39,19 +39,28 @@
 \contentsline {subsection}{\numberline {4.2.1}Open GL ES programmable graphic pipeline}{30}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}GPUImage programming library}{31}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Limitations}{32}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Modification of Pegasos algorithm for parallel processing}{33}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Modification description}{33}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.3}Modification of Pegasos algorithm for parallel processing}{34}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Modification description}{34}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Evaluation}{35}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Simple local image features}{35}{section.4.4}
-\contentsline {section}{\numberline {4.5}Tracking}{36}{section.4.5}
+\contentsline {section}{\numberline {4.4}Simple local image features}{36}{section.4.4}
+\contentsline {section}{\numberline {4.5}Tracking}{37}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Training regime}{37}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Position estimation}{37}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Resulting Application layout}{37}{section.4.6}
+\contentsline {subsection}{\numberline {4.5.2}Position estimation}{38}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Resulting Application layout}{38}{section.4.6}
 \contentsline {section}{\numberline {4.7}Results overview}{39}{section.4.7}
-\contentsline {chapter}{\numberline {5}Evaluation of our algorithm in comparison to related algorithms}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Comparison to online SVM training algorithms: Pegasos and NORMA}{43}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Experimental results}{44}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Comparison to offline algorithm: AdaBoost}{46}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comparison to the online AdaBoost}{46}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{51}{chapter.6}
-\contentsline {chapter}{References}{53}{chapter*.12}
+\contentsline {section}{\numberline {4.8}Extending classification method to work with different features}{40}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Introduction of Ferns}{41}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Algorithm description}{42}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Adding color information}{43}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}Multiple classes}{44}{subsubsection.4.8.2.2}
+\contentsline {subsection}{\numberline {4.8.3}Offline experiments}{45}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}Mobile device implementation}{46}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}Resulting algorithm}{47}{subsection.4.8.5}
+\contentsline {subsection}{\numberline {4.8.6}Implementation results}{47}{subsection.4.8.6}
+\contentsline {chapter}{\numberline {5}Evaluation of our algorithm in comparison to related algorithms}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Comparison to online SVM training algorithms: Pegasos and NORMA}{55}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Experimental results}{56}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Comparison to offline algorithm: AdaBoost}{57}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comparison to the online AdaBoost}{58}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{63}{chapter.6}
+\contentsline {chapter}{References}{65}{chapter*.13}

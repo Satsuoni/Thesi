@@ -14,45 +14,45 @@ The style file: Latex/Classes/PhDbiblio-bold.bst
 Database file #1: 9_backmatter/references.bib
 Warning--empty institution in Boostsvm
 Warning--empty journal in rop
-You've used 29 entries,
+You've used 32 entries,
             2170 wiz_defined-function locations,
-            694 strings with 8491 characters,
-and the built_in function-call counts, 10995 in all, are:
-= -- 1112
-> -- 400
+            716 strings with 9149 characters,
+and the built_in function-call counts, 12150 in all, are:
+= -- 1214
+> -- 469
 < -- 14
-+ -- 161
-- -- 128
-* -- 804
-:= -- 1654
-add.period$ -- 94
-call.type$ -- 29
-change.case$ -- 123
++ -- 188
+- -- 152
+* -- 913
+:= -- 1844
+add.period$ -- 103
+call.type$ -- 32
+change.case$ -- 141
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 522
-empty$ -- 916
-format.name$ -- 128
-if$ -- 2388
+cite$ -- 34
+duplicate$ -- 566
+empty$ -- 1003
+format.name$ -- 152
+if$ -- 2618
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 27
-newline$ -- 146
-num.names$ -- 58
-pop$ -- 178
+int.to.str$ -- 32
+missing$ -- 30
+newline$ -- 161
+num.names$ -- 64
+pop$ -- 199
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 140
 quote$ -- 0
-skip$ -- 358
+skip$ -- 379
 stack$ -- 0
-substring$ -- 760
-swap$ -- 218
+substring$ -- 821
+swap$ -- 230
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 126
 warning$ -- 2
-while$ -- 111
-width$ -- 31
-write$ -- 322
+while$ -- 120
+width$ -- 34
+write$ -- 354
 (There were 2 warnings)

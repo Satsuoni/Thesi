@@ -111,6 +111,12 @@
 \newblock In {\em Artificial Intelligence and Statistics 2001}, pages 105--112.
   Morgan Kaufmann, 2001.
 
+\bibitem{Ferns1}
+{\sc Mustafa Ozuysal, Michael Calonder, Vincent Lepetit, and Pascal Fua}.
+\newblock {\bf Fast Keypoint Recognition Using Random Ferns}.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, {\bf 32}(3):448--461,
+  March 2010.
+
 \bibitem{platt}
 {\sc J.C. Platt}.
 \newblock {\bf Using analytic QP and sparseness to speed training of support
@@ -163,11 +169,25 @@
 {\sc V.N. Vladimir and V.~Vapnik}.
 \newblock {\bf The nature of statistical learning theory}, 1995.
 
+\bibitem{Mobi}
+{\sc Daniel Wagner, Gerhard Reitmayr, Alessandro Mulloni, Tom Drummond, and
+  Dieter Schmalstieg}.
+\newblock {\bf Real-Time Detection and Tracking for Augmented Reality on Mobile
+  Phones}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics}, {\bf
+  16}(3):355--368, 2010.
+
 \bibitem{fast}
 {\sc R.G.J. Wijnhoven and BV~ViNotion}.
 \newblock {\bf Fast Training of Object Detection using Stochastic Gradient
   Descent}.
 \newblock In {\em 2010 International Conference on Pattern Recognition}, pages
   424--427. IEEE, 2010.
+
+\bibitem{Ferns2}
+{\sc Mustafa …zuysal, Pascal Fua, and Vincent Lepetit}.
+\newblock {\bf Fast keypoint recognition in ten lines of code}.
+\newblock In {\em In Proc. IEEE Conference on Computing Vision and Pattern
+  Recognition}, 2007.
 
 \end{thebibliography}

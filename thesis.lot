@@ -4,6 +4,7 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces List of SVM kernel functions}}{9}{table.caption.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Average ratio of successfully recognized pixels to the total number of pixels in the test images. Sample test images for the image sets 1 and 2 are presented on \ref {s3} and \ref {s6}, respectively.\relax }}{45}{table.caption.11}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison to NORMA and Pegasos: Error rate over testing dataset}}{45}{table.caption.11}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison to NORMA and Pegasos: Error rate over testing dataset}}{57}{table.caption.12}
 \addvspace {10\p@ }

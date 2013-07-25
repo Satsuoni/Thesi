@@ -47,10 +47,19 @@
 \BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Position estimation}{section.4.5}% 47
 \BOOKMARK [1][]{section.4.6}{4.6 Resulting Application layout}{chapter.4}% 48
 \BOOKMARK [1][]{section.4.7}{4.7 Results overview}{chapter.4}% 49
-\BOOKMARK [0][]{chapter.5}{5 Evaluation of our algorithm in comparison to related algorithms}{}% 50
-\BOOKMARK [1][]{section.5.1}{5.1 Comparison to online SVM training algorithms: Pegasos and NORMA}{chapter.5}% 51
-\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Experimental results}{section.5.1}% 52
-\BOOKMARK [1][]{section.5.2}{5.2 Comparison to offline algorithm: AdaBoost}{chapter.5}% 53
-\BOOKMARK [1][]{section.5.3}{5.3 Comparison to the online AdaBoost}{chapter.5}% 54
-\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 55
-\BOOKMARK [0][]{chapter*.12}{References}{}% 56
+\BOOKMARK [1][]{section.4.8}{4.8 Extending classification method to work with different features}{chapter.4}% 50
+\BOOKMARK [2][]{subsection.4.8.1}{4.8.1 Introduction of Ferns}{section.4.8}% 51
+\BOOKMARK [2][]{subsection.4.8.2}{4.8.2 Algorithm description}{section.4.8}% 52
+\BOOKMARK [3][]{subsubsection.4.8.2.1}{4.8.2.1 Adding color information}{subsection.4.8.2}% 53
+\BOOKMARK [3][]{subsubsection.4.8.2.2}{4.8.2.2 Multiple classes}{subsection.4.8.2}% 54
+\BOOKMARK [2][]{subsection.4.8.3}{4.8.3 Offline experiments}{section.4.8}% 55
+\BOOKMARK [2][]{subsection.4.8.4}{4.8.4 Mobile device implementation}{section.4.8}% 56
+\BOOKMARK [2][]{subsection.4.8.5}{4.8.5 Resulting algorithm}{section.4.8}% 57
+\BOOKMARK [2][]{subsection.4.8.6}{4.8.6 Implementation results}{section.4.8}% 58
+\BOOKMARK [0][]{chapter.5}{5 Evaluation of our algorithm in comparison to related algorithms}{}% 59
+\BOOKMARK [1][]{section.5.1}{5.1 Comparison to online SVM training algorithms: Pegasos and NORMA}{chapter.5}% 60
+\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Experimental results}{section.5.1}% 61
+\BOOKMARK [1][]{section.5.2}{5.2 Comparison to offline algorithm: AdaBoost}{chapter.5}% 62
+\BOOKMARK [1][]{section.5.3}{5.3 Comparison to the online AdaBoost}{chapter.5}% 63
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 64
+\BOOKMARK [0][]{chapter*.13}{References}{}% 65

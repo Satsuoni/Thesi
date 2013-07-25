@@ -12,7 +12,7 @@ Both the SVM and boosting-based learning algorithms, and their applications to v
 \section{Overview}
 In general, classification is a problem of identifying to which set, or category belongs the next observation. The categories may be given beforehand, or derived from the data itself by application of a chosen clustering method. Usually, a certain set of data samples is given beforehand (training dataset), which serves as a basis by which the membership of the new sample is determined. The data samples are transformed into a set of explanatory variables, or features, and from them the category-defining model, or classifier, is built.
 
-While the distinction between offline and online algorithms for training classifiers is not clearly defined, it is usually accepted that the offline systems have random access to all training data at the same time, and that the model resulting from this data should asymptotically converge to the equilibrium. In this setting, the training time is less important.  On the other hand, online systems have only limited access to the data, usuallly to a single sample at a time, or a few consecutive samples, and it is preferrable for the learning iteration to run in the real time, i.e. that the update iteration should take less time then the acquisition of the next data sample. 
+While the distinction between offline and online algorithms for training classifiers is not clearly defined, it is usually accepted that the offline systems have random access to all training data at the same time, and that the model resulting from this data should asymptotically converge to the equilibrium. In this setting, the training time is less important.  On the other hand, online systems have only limited access to the data, usually to a single sample at a time, or a few consecutive samples, and it is preferable for the learning iteration to run in the real time, i.e. that the update iteration should take less time then the acquisition of the next data sample. 
 
 There are several types of classifiers, such as binary or multiclass, linear, nonlinear and categorical, etc. In this paper, we focus on the linear binary classifiers, which can be used for nonlinear classification by transforming feature space. 
 \section{Offline classification algorithms}
@@ -24,7 +24,7 @@ There are several types of classifiers, such as binary or multiclass, linear, no
 		\caption[Maximum margin separation]{Two classes separated by a maximum margin hyperplane}
 		\label{Margin}
 	\end{figure}
-The support vector machines are a class of linear  binary classifiers that attempt to maximize the minimal distance (margin) between classes, i.e. to construct a hyperplane in the feature space that separates the two classes and is located, intuitively, exactly in the "middle" between them (see \figref{Margin}). The mathematical formulation for this problem is: given a set of training samples $\vec{x}_i$ and associated labels $y_i$, $i\in [1..n]$, minimize in$\vec{w},b$ $\frac{1}{2}||\vec{w}||^2$ subject to $y_i(\vec{w}\vec{x}_i-b)\ge 1$. Introducing Lagrangian multiplers $\alpha_i$, the primal formulation then becomes as follows: 
+The support vector machines are a class of linear  binary classifiers that attempt to maximize the minimal distance (margin) between classes, i.e. to construct a hyperplane in the feature space that separates the two classes and is located, intuitively, exactly in the "middle" between them (see \figref{Margin}). The mathematical formulation for this problem is: given a set of training samples $\vec{x}_i$ and associated labels $y_i$, $i\in [1..n]$, minimize in $\vec{w},b$ $\frac{1}{2}||\vec{w}||^2$ subject to $y_i(\vec{w}\vec{x}_i-b)\ge 1$. Introducing Lagrangian multipliers $\alpha_i$, the primal formulation then becomes as follows: 
 \begin{equation}
 \label{simplePrimal}
 \min_{\vec{w},b} \max_{\alpha_i}\left\{ \frac{1}{2}||\vec{w}||^2 -\sum_{i=1}^{n}\alpha_i(y_i(\vec{w}\vec{x}_i-b)-1)\right\}
@@ -38,7 +38,7 @@ $$
 The dual formulation of the above problem 
 \begin{equation}
 \label{simpleDual}
-\max_{\alpha_i}\left ( \sum_{i=1}^{n}\alpha_i-\frac{1}{2}\sum_{i=1}^{n}\sum{j=1}^{n}\alpha_i \alpha_j y_i y_j k(\vec{x_i},\vec{x_j})\right)
+\max_{\alpha_i}\left ( \sum_{i=1}^{n}\alpha_i-\frac{1}{2}\sum_{i=1}^{n}\sum_{j=1}^{n}\alpha_i \alpha_j y_i y_j k(\vec{x_i},\vec{x_j})\right)
 \end{equation}
 subject to $\alpha_i \ge 0$,where, in original linear case, $k(\vec{x_i},\vec{x_j})=\vec{x_i}\cdot \vec{x_j}$, $\cdot$ denoting an inner product, and $\vec{w}=\sum_{i=1}^{n}\alpha_i y_i \vec{x}_i$. In this formulation, data points $\vec{x}_i$ for which $\alpha_i>0$ are called the support vectors, giving rise to the name of the method. Intuitively, these are the points that lie on the margin hyperplanes. 
 
@@ -53,15 +53,15 @@ SVM were then originally derived as a  family of classifiers minimizing right-ha
 
 \begin{equation}
 \label{expandedPrimal}
- \min_{\vec{w}} \left\{ \frac{\lambda}{2}||\vec{w}||^2 +\frac{1}{n}\sum_{i=1}^{n}l(\vec{w},(\vec{x},y)\right\}
+ \min_{\vec{w}} \left\{ \frac{\lambda}{2}||\vec{w}||^2 +\frac{1}{n}\sum_{i=1}^{n}l(\vec{w},\vec{x},y)\right\}
 \end{equation}
-where $l(\vec{w},(\vec{x},y)$ is a loss function determining penalty for the outlier and $\lambda$ is a parameter that determines the "softness" of the margin, with large $\lambda$ favoring larger number of outliers with smaller margin.
+where $l(\vec{w},\vec{x},y)$ is a loss function determining penalty for the outlier and $\lambda$ is a parameter that determines the "softness" of the margin, with large $\lambda$ favoring larger number of outliers with smaller margin.
 
 The most commonly used loss function $l$ is a hinge-loss function, that linearly punishes the outliers and margin errors, i.e. data points that are classified correctly but lie between margin hyperplanes
-$$
+\begin{equation}
 \label{Hingeloss}
-l(\vec{w},(\vec{x},y)=\max(0, \rho-y(\vec{w}\cdot\vec{x}))
-$$
+l(\vec{w},\vec{x},y)=\max(0, \rho-y(\vec{w}\cdot\vec{x}))
+\end{equation}
 where $\rho$ is a margin parameter, usually assumed to be 1 for maximum margin algorithms.
 
 When using \eqrefr{Hingeloss}, dual form of \eqrefr{expandedPrimal} is the same as \eqrefr{simpleDual}, with the constraints changed to $0 \le \alpha_i \le C$, $C \propto \frac{1}{\lambda}$. This constrained quadratic problem is the one that is usually solved by most common offline methods.
@@ -94,7 +94,7 @@ The most commonly used kernels are listed in table \ref{Kernels}.
 %V. Vapnik and A. Chervonenkis. "On the uniform convergence of relative frequencies of events to their probabilities." 
 
 \subsubsection{Common methods for offline SVM training}
-Most common methods for SVM training deal with the solution to the \eqrefr{simpleDual}, and as such are usually applicable to the Quadratic Programming problems in general. Several classes of such silution techniques should be mentioned in this overview. 
+Most common methods for SVM training deal with the solution to the \eqrefr{simpleDual}, and as such are usually applicable to the Quadratic Programming problems in general. Several classes of such solution techniques should be mentioned in this overview. 
 
 {\bf Interior point methods}
 IP methods (for example, \cite{boyd}) replace linear constraints of the primal with a barrier function, similar to the IP methods for linear programming.  The result is a sequence of unconstrained problems which can be optimized very efficiently using Newton or Quasi-Newton methods. The advantage of IP methods is that they achieve rapid convergence to a given accuracy bound in terms of a number of iterations. Unfortunately, they typically require run time which is cubic in the number of data samples $n$. Moreover, the memory requirements of IP  very large, so such methods are not suitable for the training sets with large number of samples.
@@ -108,7 +108,7 @@ Some of the decomposition methods can be adapted to the online learning setting,
 Unconstrained gradient methods used to be common before the emergence of the more modern methods. While gradient based methods are usually known to exhibit slow convergence rates, the computational demands imposed by large scale classification problems of high dimension feature space, such as the ones common in image processing,  has revived the theoretical and applied interest in gradient methods. Many of the online methods described below, as well as our proposed algorithm, were based on the modifications of gradient methods.
 
 \subsection{Boosting}
-Boosting is a name of a family of meta-learning algorithms that boost the performance of several low- accuracy claasifiers by combining them into a single classifier with increased accuracy. Usually, a linear combination of the classifiers' outputs is used, with the goal of the corresponding algorithm being the assigment of the  weights to each classifier. In other words, given a set, or a pool of $M$ classifiers $h_i(\vec{x})$, each with error ratio $\epsilon_i$ being arbitrarily close to a result of a random classification, $0.5$,  over a training dataset (the error ratio may be unknown), the boosting algorithm attempts to find a set of boosting coeffficients $\{\beta_i\}$ to form a confidence function $F(\vec{x},\{\beta_i\})=\sum_{i=1}^{M}\beta_i h_i(\vec{x})$ , so that a classifier
+Boosting is a name of a family of meta-learning algorithms that boost the performance of several low-accuracy classifiers by combining them into a single classifier with increased accuracy. Usually, a linear combination of the classifiers' outputs is used, with the goal of the corresponding algorithm being the assignment of the  weights to each classifier. In other words, given a set, or a pool of $M$ classifiers $h_i(\vec{x})$, each with error ratio $\epsilon_i$ being arbitrarily close to a result of a random classification, $0.5$,  over a training dataset (the error ratio may be unknown), the boosting algorithm attempts to find a set of boosting coefficients $\{\beta_i\}$ to form a confidence function $F(\vec{x},\{\beta_i\})=\sum_{i=1}^{M}\beta_i h_i(\vec{x})$ , so that a classifier
 \begin{equation}
 \label{BoostingClassifier}
 H(\vec{x},\{\beta_i\})=sign(F(\vec{x},\{\beta_i\}))
@@ -125,7 +125,7 @@ AdaBoost, short for Adaptive Boosting, is a greedy algorithm formulated by Yoav 
 
 AdaBoost adds a new weak classifier in each of a series of iterations  $t = 1,\ldots,T$. On each iteration, a distribution of weights $D_{t}$ is updated that indicates the importance of examples in the data set for the classification. On each round, the weights of each incorrectly classified example are increased, and the weights of each correctly classified example are decreased, so the new classifier focuses on the examples which have been misclassified by the previous classifiers.
 
-	For binary classifications, the algorithm is given input data samples, $x_i \in X$,  corresponding labels $y_i\in \{-1;1\}$, $i = 1,\ldots,n$, and a family of weak classifiers $\mathfrak{H}$ .  It initiazises a weight $D_i=1$ for each sample. Then, for each iteration, the algorithm proceeds as described below.
+	For binary classifications, the algorithm is given input data samples, $x_i \in X$,  corresponding labels $y_i\in \{-1;1\}$, $i = 1,\ldots,n$, and a family of weak classifiers $\mathfrak{H}$ .  It initializes a weight $D_i=1$ for each sample. Then, for each iteration, the algorithm proceeds as described below.
 \begin{enumerate}
 \item {A weak classifier is selected from a provided family  $\mathfrak{H}$ that minimizes the weighted error rate over the training dataset:
 $$
@@ -135,36 +135,36 @@ $$
 \epsilon_{t}=\frac{\sum_{i=1}^{n}D_i I(h_t(\vec{x}_i)y_i<0)}{\sum_{i=1}^{n}D_i}
 $$
 \item {Set $\beta_i=\frac{1}{2}ln\left(\frac{1-\epsilon_{t}}{\epsilon_{t}}\right)$}
-\item{Update for all $i$: $D_i=D_i e^{-\beta_i y_i h_t(\vec{x_i})}$. This step decreases the weigths of the successfully classified samples, and decreases the weight of misclassified ones. }
+\item{Update for all $i$: $D_i=D_i e^{-\beta_i y_i h_t(\vec{x_i})}$. This step decreases the weights of the successfully classified samples, and decreases the weight of misclassified ones. }
 \end{enumerate}
 
 After $T$ iterations, the resulting strong classifier can be calculated by \eqrefr{BoostingClassifier}
 
 \subsection{Other boosting algorithms}
-Boosting algorithms mainly differ in te way they estimate weights $\beta_i$. Some of them prioritize misclassified examples, same as the AdaBoost, while others, like BrownBoost, attempt to increase robustness to noise and outliers by "giving up", and decreasing weights of the samples that has been repeatedly misclassified. 
+Boosting algorithms mainly differ in the way they estimate weights $\beta_i$. Some of them prioritize misclassified examples, same as the AdaBoost, while others, like BrownBoost, attempt to increase robustness to noise and outliers by "giving up", and decreasing weights of the samples that has been repeatedly misclassified. 
 
 While our proposed learning technique uses AdaBoost as the basis for sample weighting, it is flexible enough to be easily adjusted to other methods. 
 
 \section{Online classification algorithms}
 
-As mentioned above, many of the offline classification algorithms suffer from superlinear computational costs in the number of training samples. As the amount of training data increases, the training quickly becomes unfeasible. Also, with the increasing amount of common devices capable of data acquisition, such as mobile phones wit video cameras, etc, real-time classification tasks that allow for the adaptation to the incoming data stream and operate on a limited amount of data available during a single frame become more and more relevant. This is one of the reasons for the development of our proposed algorithm and sample application.  
+As mentioned above, many of the offline classification algorithms suffer from superlinear computational costs in the number of training samples. As the amount of training data increases, the training quickly becomes unfeasible. Also, with the increasing amount of common devices capable of data acquisition, such as mobile phones with video cameras, etc, real-time classification tasks that allow for the adaptation to the incoming data stream and operate on a limited amount of data available during a single frame become more and more relevant. This is one of the reasons for the development of our proposed algorithm and sample application.  
 
 In this section therefore, we introduce the algorithms specifically developed or modified for the online setting, that can be used as the replacement of the algorithms described above. 
 \subsection{Online SVM}
-In this section, we review two algorithms for online SVM training that have a direct bearing on out work. Both of these algorithms use a variant of the Stochastic Gradient Descent in order to upadate the solution on each iteration. 
+In this section, we review two algorithms for online SVM training that have a direct bearing on out work. Both of these algorithms use a variant of the Stochastic Gradient Descent in order to update the solution on each iteration. 
 \subsubsection{NORMA}
 \label{NORMAIntro}
 NORMA (\cite{Norma}) is a generic method for online risk minimization using stochastic gradient descent, with a particular focus on its application to kernel-based Support Vector Machines and regression. In the founding paper,  Kivinen et.al. both describe the method and give theoretical  bounds on its accuracy and convergence rate. They show that the convergence rate of NORMA is independent of the size of the dataset, if a limited dataset is used, and is instead of the order $O(\frac{X}{\epsilon^2})$, where $X$ is the bound on the absolute value of the kernel function, and $\epsilon$ is an error rate. 
-They also show that the truncation error resulting from removing older kernel expansion vectors decreases exponentially with the number of preserved vectors-coefficient pairs, as long as the kernel fuction values over the space of input data samples are bounded. 
+They also show that the truncation error resulting from removing older kernel expansion vectors decreases exponentially with the number of preserved vectors-coefficient pairs, as long as the kernel function values over the space of input data samples are bounded. 
 
-The agorithm itself attempts to minimize the primal formulation of an SVM problem (\eqrefr{expandedPrimal}) rewritten to allow the usage of the kernel trick. To do that, the concept of Reproducible Kernel Hilbert Spaces (RKHS) with defined inner product is used to replace $\vec{w}$ of the linear SVM with the function $f$ int the RKHS $\mathscr{H}$  defined by kernel $k(\cdot,\cdot)$
+The algorithm itself attempts to minimize the primal formulation of an SVM problem (\eqrefr{expandedPrimal}) rewritten to allow the usage of the kernel trick. To do that, the concept of Reproducible Kernel Hilbert Spaces (RKHS) with defined inner product is used to replace $\vec{w}$ of the linear SVM with the function $f$ int the RKHS $\mathscr{H}$  defined by kernel $k(\cdot,\cdot)$
 
 \begin{equation}
 \label{kernelPrimal}
  \min_{f \in \mathscr{H}} \left\{ \frac{\lambda}{2}||f||_\mathscr{H} ^2 +\frac{1}{n}\sum_{i=1}^{n}l(f(\vec{x}_i,y_i))\right\}
 \end{equation}
 where $||f||_\mathscr{H} ^2=f\cdot f$
-However, in the online setting, assuming that a single data sample $\vec{x}_t$ and label $y_t$ are provided on the iteration $t$, and other data samples unavailable \eqrefr{kernelPrimal} instead takes the form of instantanious risk: 
+However, in the online setting, assuming that a single data sample $\vec{x}_t$ and label $y_t$ are provided on the iteration $t$, and other data samples unavailable \eqrefr{kernelPrimal} instead takes the form of instantaneous risk: 
 \begin{equation}
 \label{kernelPrimalInst}
  \min_{f \in \mathscr{H}} \left\{ \frac{\lambda}{2}||f||_\mathscr{H} ^2 +l(f(\vec{x}_t,y_t))\right\}

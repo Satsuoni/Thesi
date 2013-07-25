@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 JUL 2013 15:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  25 JUL 2013 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,6 +460,11 @@ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \openout2 = `Latex/Macros/MacroFile1.aux'.
 
 (./Latex/Macros/MacroFile1.tex)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+)
 \@glossaryfile=\write4
 \openout4 = `thesis.glo'.
 
@@ -471,20 +476,20 @@ Writing glossary file thesis.glo
 (./4/tracking.aux) (./5/evaluation.aux) (./6/Conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -517,8 +522,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box57
-Package backref Info: ** backref set up for natbib ** on input line 84.
-Package hyperref Info: Link coloring OFF on input line 84.
+Package backref Info: ** backref set up for natbib ** on input line 85.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -528,33 +533,33 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
 
-<0_frontmatter/figures/symbol.jpg, id=229, 315.1775pt x 312.16624pt>
+<0_frontmatter/figures/symbol.jpg, id=265, 315.1775pt x 312.16624pt>
 File: 0_frontmatter/figures/symbol.jpg Graphic file (type jpg)
 
 <use 0_frontmatter/figures/symbol.jpg>
-Package pdftex.def Info: 0_frontmatter/figures/symbol.jpg used on input line 95
+Package pdftex.def Info: 0_frontmatter/figures/symbol.jpg used on input line 96
 .
 (pdftex.def)             Requested size: 85.35826pt x 84.54323pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 95.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 96.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -592,7 +597,7 @@ l.15 \end{acknowledgements}
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \tableofcontents
+l.141 \tableofcontents
                                   % print the table of contents [2
 \FN@pp@footnotehinttrue 
 
@@ -607,25 +612,25 @@ stination with the same identifier (name{page.iv}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.55 ...n to the online AdaBoost}{46}{section.5.3}
+l.56 ...Offline experiments}{45}{subsection.4.8.3}
                                                    [4])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
  [5] [6
 
-] (./thesis.lof)
+] (./thesis.lof
+[7])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-
-[7] [8
-
-] (./thesis.lot)
+ [8] (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [9]
+ [9
+
+]
 \openout2 = `0_frontmatter/glossary.aux'.
 
  (./0_frontmatter/glossary.tex) (./thesis.nls
@@ -712,7 +717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
 
 
-] <2/figures/margin_sep_lr.jpg, id=440, 60.225pt x 51.19125pt>
+] <2/figures/margin_sep_lr.jpg, id=532, 60.225pt x 51.19125pt>
 File: 2/figures/margin_sep_lr.jpg Graphic file (type jpg)
 
 <use 2/figures/margin_sep_lr.jpg>
@@ -743,21 +748,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 ]
  3.
-<3/figures/NORMAOursGrowth.jpg, id=559, 423.5022pt x 312.2064pt>
+<3/figures/NORMAOursGrowth.jpg, id=652, 423.5022pt x 312.2064pt>
 File: 3/figures/NORMAOursGrowth.jpg Graphic file (type jpg)
 
 <use 3/figures/NORMAOursGrowth.jpg>
 Package pdftex.def Info: 3/figures/NORMAOursGrowth.jpg used on input line 18.
 (pdftex.def)             Requested size: 330.05322pt x 243.31517pt.
 
-<3/figures/Target.jpg, id=560, 449.5194pt x 403.62794pt>
+<3/figures/Target.jpg, id=653, 449.5194pt x 403.62794pt>
 File: 3/figures/Target.jpg Graphic file (type jpg)
 
 <use 3/figures/Target.jpg>
 Package pdftex.def Info: 3/figures/Target.jpg used on input line 25.
 (pdftex.def)             Requested size: 167.08653pt x 150.02362pt.
 
-<3/figures/resultApp.jpg, id=561, 449.5194pt x 403.62794pt>
+<3/figures/resultApp.jpg, id=654, 449.5194pt x 403.62794pt>
 File: 3/figures/resultApp.jpg Graphic file (type jpg)
 
 <use 3/figures/resultApp.jpg>
@@ -765,14 +770,14 @@ Package pdftex.def Info: 3/figures/resultApp.jpg used on input line 31.
 (pdftex.def)             Requested size: 167.08653pt x 150.02362pt.
  [17] [18 <./3/figures/NORMAOursGrowth.jpg>]
 [19 <./3/figures/Target.jpg> <./3/figures/resultApp.jpg>]
-<3/figures/linearsample2.jpg, id=590, 579.16376pt x 431.6125pt>
+<3/figures/linearsample2.jpg, id=683, 579.16376pt x 431.6125pt>
 File: 3/figures/linearsample2.jpg Graphic file (type jpg)
 
 <use 3/figures/linearsample2.jpg>
 Package pdftex.def Info: 3/figures/linearsample2.jpg used on input line 67.
 (pdftex.def)             Requested size: 247.54149pt x 184.47673pt.
  [20]
-<3/figures/OurmethodTrain.jpg, id=600, 815.045pt x 568.1225pt>
+<3/figures/OurmethodTrain.jpg, id=692, 815.045pt x 568.1225pt>
 File: 3/figures/OurmethodTrain.jpg Graphic file (type jpg)
 
 <use 3/figures/OurmethodTrain.jpg>
@@ -781,207 +786,362 @@ Package pdftex.def Info: 3/figures/OurmethodTrain.jpg used on input line 76.
 \@float@every@figure=\toks26
  [21 <./3/figures/linearsample2.jpg>]
 [22 <./3/figures/OurmethodTrain.jpg>]
-<3/figures/c1.jpg, id=617, 562.1pt x 421.575pt>
+<3/figures/c1.jpg, id=711, 562.1pt x 421.575pt>
 File: 3/figures/c1.jpg Graphic file (type jpg)
  <use 3/figures/c1.jpg>
 Package pdftex.def Info: 3/figures/c1.jpg used on input line 128.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/c2.jpg, id=618, 562.1pt x 421.575pt>
+<3/figures/c2.jpg, id=712, 562.1pt x 421.575pt>
 File: 3/figures/c2.jpg Graphic file (type jpg)
  <use 3/figures/c2.jpg>
 Package pdftex.def Info: 3/figures/c2.jpg used on input line 134.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/l1.jpg, id=619, 562.1pt x 421.575pt>
+<3/figures/l1.jpg, id=713, 562.1pt x 421.575pt>
 File: 3/figures/l1.jpg Graphic file (type jpg)
  <use 3/figures/l1.jpg>
 Package pdftex.def Info: 3/figures/l1.jpg used on input line 141.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
 
-<3/figures/l2.jpg, id=620, 562.1pt x 421.575pt>
+<3/figures/l2.jpg, id=714, 562.1pt x 421.575pt>
 File: 3/figures/l2.jpg Graphic file (type jpg)
  <use 3/figures/l2.jpg>
 Package pdftex.def Info: 3/figures/l2.jpg used on input line 147.
 (pdftex.def)             Requested size: 167.08653pt x 125.31558pt.
- [23]
-<3/figures/losses.jpg, id=628, 356.65245pt x 236.68425pt>
+
+<3/figures/losses.jpg, id=715, 356.65245pt x 236.68425pt>
 File: 3/figures/losses.jpg Graphic file (type jpg)
 
 <use 3/figures/losses.jpg>
 Package pdftex.def Info: 3/figures/losses.jpg used on input line 158.
 (pdftex.def)             Requested size: 288.7942pt x 191.66263pt.
- [24 <./3/figures/c1.jpg> <./3/figures/c2.jpg> <./3/figures/l1.jpg> <./3/figure
-s/l2.jpg>] [25 <./3/figures/losses.jpg>]) [26]
+ [23] [24 <./3/figures/c1.jpg> <./3/figures/c2.jpg> <./3/figures/l1.jpg> <./3/f
+igures/l2.jpg>] [25 <./3/figures/losses.jpg>])
+[26]
 \openout2 = `4/tracking.aux'.
 
-
-(./4/tracking.tex
+ (./4/tracking.tex
  4.
-<4/figures/iphone4s.jpg, id=648, 602.25pt x 499.8675pt>
+<4/figures/iphone4s.jpg, id=741, 602.25pt x 499.8675pt>
 File: 4/figures/iphone4s.jpg Graphic file (type jpg)
 
 <use 4/figures/iphone4s.jpg>
-Package pdftex.def Info: 4/figures/iphone4s.jpg used on input line 17.
+Package pdftex.def Info: 4/figures/iphone4s.jpg used on input line 18.
 (pdftex.def)             Requested size: 288.7942pt x 239.70485pt.
  [27
 
 
 
 ] [28 <./4/figures/iphone4s.jpg>] [29]
-<4/figures/glespipe.jpg, id=663, 934.49126pt x 503.8825pt>
+<4/figures/glespipe.jpg, id=756, 934.49126pt x 503.8825pt>
 File: 4/figures/glespipe.jpg Graphic file (type jpg)
 
 <use 4/figures/glespipe.jpg>
-Package pdftex.def Info: 4/figures/glespipe.jpg used on input line 46.
+Package pdftex.def Info: 4/figures/glespipe.jpg used on input line 47.
 (pdftex.def)             Requested size: 288.7942pt x 155.71758pt.
  [30 <./4/figures/glespipe.jpg>]
-<4/figures/GPUScheme.jpg, id=669, 539.01375pt x 355.3275pt>
+<4/figures/GPUScheme.jpg, id=762, 539.01375pt x 355.3275pt>
 File: 4/figures/GPUScheme.jpg Graphic file (type jpg)
 
 <use 4/figures/GPUScheme.jpg>
-Package pdftex.def Info: 4/figures/GPUScheme.jpg used on input line 58.
+Package pdftex.def Info: 4/figures/GPUScheme.jpg used on input line 59.
 (pdftex.def)             Requested size: 288.7942pt x 190.37755pt.
  [31 <./4/figures/GPUScheme.jpg>] [32]
-<4/figures/pyrapega.jpg, id=680, 617.30624pt x 508.90125pt>
+<4/figures/pyrapega.jpg, id=773, 617.30624pt x 508.90125pt>
 File: 4/figures/pyrapega.jpg Graphic file (type jpg)
 
 <use 4/figures/pyrapega.jpg>
-Package pdftex.def Info: 4/figures/pyrapega.jpg used on input line 103.
+Package pdftex.def Info: 4/figures/pyrapega.jpg used on input line 117.
 (pdftex.def)             Requested size: 288.7942pt x 238.08096pt.
  [33] [34 <./4/figures/pyrapega.jpg>] [35] [36]
-<4/figures/tracking.jpg, id=717, 549.05125pt x 756.8275pt>
+[37] <4/figures/tracking.jpg, id=813, 549.05125pt x 756.8275pt>
 File: 4/figures/tracking.jpg Graphic file (type jpg)
 
 <use 4/figures/tracking.jpg>
-Package pdftex.def Info: 4/figures/tracking.jpg used on input line 152.
+Package pdftex.def Info: 4/figures/tracking.jpg used on input line 166.
 (pdftex.def)             Requested size: 371.30594pt x 511.82967pt.
- [37] [38]
-<4/figures/conf1.jpg, id=738, 481.8pt x 481.8pt>
+ [38]
+<4/figures/conf1.jpg, id=827, 481.8pt x 481.8pt>
 File: 4/figures/conf1.jpg Graphic file (type jpg)
  <use 4/figures/conf1.jpg>
-Package pdftex.def Info: 4/figures/conf1.jpg used on input line 176.
+Package pdftex.def Info: 4/figures/conf1.jpg used on input line 190.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/conf2.jpg, id=739, 481.8pt x 481.8pt>
+<4/figures/conf2.jpg, id=828, 481.8pt x 481.8pt>
 File: 4/figures/conf2.jpg Graphic file (type jpg)
  <use 4/figures/conf2.jpg>
-Package pdftex.def Info: 4/figures/conf2.jpg used on input line 182.
+Package pdftex.def Info: 4/figures/conf2.jpg used on input line 196.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/track1.jpg, id=740, 481.8pt x 481.8pt>
+<4/figures/track1.jpg, id=829, 481.8pt x 481.8pt>
 File: 4/figures/track1.jpg Graphic file (type jpg)
  <use 4/figures/track1.jpg>
-Package pdftex.def Info: 4/figures/track1.jpg used on input line 189.
+Package pdftex.def Info: 4/figures/track1.jpg used on input line 203.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/track2.jpg, id=741, 481.8pt x 481.8pt>
+<4/figures/track2.jpg, id=830, 481.8pt x 481.8pt>
 File: 4/figures/track2.jpg Graphic file (type jpg)
  <use 4/figures/track2.jpg>
-Package pdftex.def Info: 4/figures/track2.jpg used on input line 195.
+Package pdftex.def Info: 4/figures/track2.jpg used on input line 209.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/tls1.jpg, id=742, 481.8pt x 481.8pt>
+<4/figures/tls1.jpg, id=831, 481.8pt x 481.8pt>
 File: 4/figures/tls1.jpg Graphic file (type jpg)
  <use 4/figures/tls1.jpg>
-Package pdftex.def Info: 4/figures/tls1.jpg used on input line 201.
+Package pdftex.def Info: 4/figures/tls1.jpg used on input line 215.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-<4/figures/tls2.jpg, id=743, 481.8pt x 481.8pt>
+<4/figures/tls2.jpg, id=832, 481.8pt x 481.8pt>
 File: 4/figures/tls2.jpg Graphic file (type jpg)
  <use 4/figures/tls2.jpg>
-Package pdftex.def Info: 4/figures/tls2.jpg used on input line 207.
+Package pdftex.def Info: 4/figures/tls2.jpg used on input line 221.
 (pdftex.def)             Requested size: 167.08653pt x 167.08131pt.
 
-[39]) [40] [41 <./4/figures/tracking.jpg>] [42 <./4/figures/conf1.jpg> <./4/fig
+[39] [40] [41]
+Overfull \hbox (89.99309pt too wide) in paragraph at lines 287--291
+\OT1/cmr/m/n/10.95 joint prob-a-bil-ity over se-lected fea-tures, and -1 for al
+l oth-ers: $\OML/cmm/m/it/10.95 l\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 F[]; c
+[]\OT1/cmr/m/n/10.95 ) = []$ 
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+[42] [43] [44] <images/tb2.jpg, id=899, 642.4pt x 481.8pt>
+File: images/tb2.jpg Graphic file (type jpg)
+
+<use images/tb2.jpg>
+Package pdftex.def Info: images/tb2.jpg used on input line 338.
+(pdftex.def)             Requested size: 96.35583pt x 72.26999pt.
+ <images/t2.jpg, id=900, 142.5325pt x 154.5775pt>
+File: images/t2.jpg Graphic file (type jpg)
+
+<use images/t2.jpg>
+Package pdftex.def Info: images/t2.jpg used on input line 346.
+(pdftex.def)             Requested size: 66.64012pt x 72.26999pt.
+ <images/test1.jpg, id=901, 481.8pt x 642.4pt>
+File: images/test1.jpg Graphic file (type jpg)
+
+<use images/test1.jpg>
+Package pdftex.def Info: images/test1.jpg used on input line 353.
+(pdftex.def)             Requested size: 54.19647pt x 72.26999pt.
+ <images/train1.jpg, id=902, 481.8pt x 642.4pt>
+File: images/train1.jpg Graphic file (type jpg)
+
+<use images/train1.jpg>
+Package pdftex.def Info: images/train1.jpg used on input line 364.
+(pdftex.def)             Requested size: 81.30208pt x 108.405pt.
+ <images/ttext1.png, id=903, 215.80624pt x 220.825pt>
+File: images/ttext1.png Graphic file (type png)
+
+<use images/ttext1.png>
+Package pdftex.def Info: images/ttext1.png used on input line 371.
+(pdftex.def)             Requested size: 105.94026pt x 108.405pt.
+
+Overfull \hbox (2.79903pt too wide) in paragraph at lines 371--372
+[][] 
+ []
+
+<images/test2.jpg, id=904, 481.8pt x 642.4pt>
+File: images/test2.jpg Graphic file (type jpg)
+ <use images/test2.jpg>
+Package pdftex.def Info: images/test2.jpg used on input line 378.
+(pdftex.def)             Requested size: 81.30208pt x 108.405pt.
+
+Overfull \hbox (14.57378pt too wide) in paragraph at lines 333--386
+ [][] 
+ []
+
+
+Overfull \hbox (30.12822pt too wide) in paragraph at lines 391--411
+[][] 
+ []
+
+[45] <images/fernlen.png, id=931, 120.45pt x 90.3375pt>
+File: images/fernlen.png Graphic file (type png)
+
+<use images/fernlen.png>
+Package pdftex.def Info: images/fernlen.png used on input line 423.
+(pdftex.def)             Requested size: 192.73862pt x 144.54pt.
+
+Overfull \hbox (7.08565pt too wide) in paragraph at lines 423--425
+[][]
+ []
+
+<images/fernnum.png, id=933, 120.45pt x 90.3375pt>
+File: images/fernnum.png Graphic file (type png)
+ <use images/fernnum.png>
+Package pdftex.def Info: images/fernnum.png used on input line 428.
+(pdftex.def)             Requested size: 192.73862pt x 144.54pt.
+
+Overfull \hbox (7.08565pt too wide) in paragraph at lines 428--430
+[][]
+ []
+
+<images/Shader1c.png, id=940, 120.45pt x 96.23955pt>
+File: images/Shader1c.png Graphic file (type png)
+ <use images/Shader1c.png>
+Package pdftex.def Info: images/Shader1c.png used on input line 443.
+(pdftex.def)             Requested size: 153.77295pt x 122.85876pt.
+
+Overfull \hbox (1.12593pt too wide) in paragraph at lines 443--444
+[][] 
+ []
+
+<images/Shader2c.png, id=941, 120.45pt x 76.00395pt>
+File: images/Shader2c.png Graphic file (type png)
+ <use images/Shader2c.png>
+Package pdftex.def Info: images/Shader2c.png used on input line 448.
+(pdftex.def)             Requested size: 194.71437pt x 122.85876pt.
+
+Overfull \hbox (42.06735pt too wide) in paragraph at lines 448--449
+[][] 
+ []
+
+[46] <images/fernUnpacked1.png, id=951, 46.2528pt x 92.5056pt>
+File: images/fernUnpacked1.png Graphic file (type png)
+
+<use images/fernUnpacked1.png>
+Package pdftex.def Info: images/fernUnpacked1.png used on input line 468.
+(pdftex.def)             Requested size: 65.04636pt x 130.08621pt.
+
+Overfull \hbox (15.53882pt too wide) in paragraph at lines 468--469
+[][] 
+ []
+
+File: images/t2.jpg Graphic file (type jpg)
+<use images/t2.jpg>
+Package pdftex.def Info: images/t2.jpg used on input line 476.
+(pdftex.def)             Requested size: 59.97632pt x 65.04256pt.
+
+Overfull \hbox (10.46878pt too wide) in paragraph at lines 476--477
+[][] 
+ []
+
+<images/backgrounds.jpg, id=952, 171.64125pt x 171.64125pt>
+File: images/backgrounds.jpg Graphic file (type jpg)
+
+<use images/backgrounds.jpg>
+Package pdftex.def Info: images/backgrounds.jpg used on input line 481.
+(pdftex.def)             Requested size: 65.041pt x 65.04256pt.
+
+Overfull \hbox (15.53346pt too wide) in paragraph at lines 481--482
+[][] 
+ []
+
+<images/IMG_1807.jpg, id=963, 642.4pt x 963.6pt>
+File: images/IMG_1807.jpg Graphic file (type jpg)
+ <use images/IMG_1807.jpg>
+Package pdftex.def Info: images/IMG_1807.jpg used on input line 498.
+(pdftex.def)             Requested size: 111.3929pt x 167.08867pt.
+
+<images/IMG_1809.jpg, id=964, 642.4pt x 963.6pt>
+File: images/IMG_1809.jpg Graphic file (type jpg)
+ <use images/IMG_1809.jpg>
+Package pdftex.def Info: images/IMG_1809.jpg used on input line 503.
+(pdftex.def)             Requested size: 111.3929pt x 167.08867pt.
+
+<images/IMG_1812.jpg, id=965, 642.4pt x 963.6pt>
+File: images/IMG_1812.jpg Graphic file (type jpg)
+ <use images/IMG_1812.jpg>
+Package pdftex.def Info: images/IMG_1812.jpg used on input line 508.
+(pdftex.def)             Requested size: 111.3929pt x 167.08867pt.
+
+[47]) [48] [49 <./4/figures/tracking.jpg>] [50 <./4/figures/conf1.jpg> <./4/fig
 ures/conf2.jpg> <./4/figures/track1.jpg> <./4/figures/track2.jpg> <./4/figures/
-tls1.jpg> <./4/figures/tls2.jpg>]
+tls1.jpg> <./4/figures/tls2.jpg>] [51 <./images/tb2.jpg> <./images/t2.jpg> <./i
+mages/test1.jpg> <./images/train1.jpg> <./images/ttext1.png> <./images/test2.jp
+g> <./images/fernlen.png> <./images/fernnum.png>] [52 <./images/Shader1c.png> <
+./images/Shader2c.png> <./images/fernUnpacked1.png> <./images/backgrounds.jpg>]
+[53 <./images/IMG_1807.jpg> <./images/IMG_1809.jpg> <./images/IMG_1812.jpg>]
 \openout2 = `5/evaluation.aux'.
 
- (./5/evaluation.tex
+
+(./5/evaluation.tex [54
+
+
+
+]
  5.
-[43
-
-
-
-] [44] <5/figures/PN_Lin_Lin.jpg, id=805, 483.8075pt x 379.4175pt>
+[55] [56] <5/figures/PN_Lin_Lin.jpg, id=1054, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Lin_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Lin_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Lin_Lin.jpg used on input line 47.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Noise_Lin.jpg, id=806, 483.8075pt x 379.4175pt>
+<5/figures/PN_Noise_Lin.jpg, id=1055, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Noise_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Noise_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Noise_Lin.jpg used on input line 53.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Bayess_Lin.jpg, id=807, 483.8075pt x 379.4175pt>
+<5/figures/PN_Bayess_Lin.jpg, id=1056, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Bayess_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Bayess_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Bayess_Lin.jpg used on input line 60.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Move_Lin.jpg, id=808, 483.8075pt x 379.4175pt>
+<5/figures/PN_Move_Lin.jpg, id=1057, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Move_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Move_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Move_Lin.jpg used on input line 66.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Switch_Lin.jpg, id=809, 483.8075pt x 379.4175pt>
+<5/figures/PN_Switch_Lin.jpg, id=1058, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Switch_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Switch_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Switch_Lin.jpg used on input line 72.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Cov_Lin.jpg, id=810, 483.8075pt x 379.4175pt>
+<5/figures/PN_Cov_Lin.jpg, id=1059, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Cov_Lin.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Cov_Lin.jpg>
 Package pdftex.def Info: 5/figures/PN_Cov_Lin.jpg used on input line 78.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Lin_Gauss.jpg, id=811, 483.8075pt x 379.4175pt>
+<5/figures/PN_Lin_Gauss.jpg, id=1060, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Lin_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Lin_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Lin_Gauss.jpg used on input line 89.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Noise_Gauss.jpg, id=812, 483.8075pt x 379.4175pt>
+<5/figures/PN_Noise_Gauss.jpg, id=1061, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Noise_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Noise_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Noise_Gauss.jpg used on input line 95.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Bayess_Gauss.jpg, id=813, 483.8075pt x 379.4175pt>
+<5/figures/PN_Bayess_Gauss.jpg, id=1062, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Bayess_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Bayess_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Bayess_Gauss.jpg used on input line 102.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Move_Gauss.jpg, id=814, 483.8075pt x 379.4175pt>
+<5/figures/PN_Move_Gauss.jpg, id=1063, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Move_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Move_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Move_Gauss.jpg used on input line 108.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Switch_Gauss.jpg, id=815, 483.8075pt x 379.4175pt>
+<5/figures/PN_Switch_Gauss.jpg, id=1064, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Switch_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Switch_Gauss.jpg>
 Package pdftex.def Info: 5/figures/PN_Switch_Gauss.jpg used on input line 114.
 (pdftex.def)             Requested size: 167.08653pt x 131.03233pt.
 
-<5/figures/PN_Cov_Gauss.jpg, id=816, 483.8075pt x 379.4175pt>
+<5/figures/PN_Cov_Gauss.jpg, id=1065, 483.8075pt x 379.4175pt>
 File: 5/figures/PN_Cov_Gauss.jpg Graphic file (type jpg)
 
 <use 5/figures/PN_Cov_Gauss.jpg>
@@ -997,45 +1157,41 @@ Overfull \hbox (6.018pt too wide) in paragraph at lines 137--137
 []\OT1/cmr/m/n/10.95 Covertype| 
  []
 
-
-Underfull \vbox (badness 3536) has occurred while \output is active []
-
- [45]
-<5/figures/adas.jpg, id=823, 449.5194pt x 338.2236pt>
+[57] <5/figures/adas.jpg, id=1072, 449.5194pt x 338.2236pt>
 File: 5/figures/adas.jpg Graphic file (type jpg)
- <use 5/figures/adas.jpg>
+
+<use 5/figures/adas.jpg>
 Package pdftex.def Info: 5/figures/adas.jpg used on input line 153.
 (pdftex.def)             Requested size: 167.08653pt x 125.71362pt.
 
-<5/figures/adaab.jpg, id=824, 449.5194pt x 338.2236pt>
+<5/figures/adaab.jpg, id=1073, 449.5194pt x 338.2236pt>
 File: 5/figures/adaab.jpg Graphic file (type jpg)
 
 <use 5/figures/adaab.jpg>
 Package pdftex.def Info: 5/figures/adaab.jpg used on input line 159.
 (pdftex.def)             Requested size: 167.08653pt x 125.71362pt.
 
-<5/figures/odas.jpg, id=827, 449.5194pt x 338.2236pt>
+<5/figures/odas.jpg, id=1076, 449.5194pt x 338.2236pt>
 File: 5/figures/odas.jpg Graphic file (type jpg)
- <use 5/figures/odas.jpg>
+
+<use 5/figures/odas.jpg>
 Package pdftex.def Info: 5/figures/odas.jpg used on input line 172.
 (pdftex.def)             Requested size: 288.7942pt x 217.29843pt.
-
-[46]) [47] [48 <./5/figures/PN_Lin_Lin.jpg> <./5/figures/PN_Noise_Lin.jpg> <./5
-/figures/PN_Bayess_Lin.jpg> <./5/figures/PN_Move_Lin.jpg> <./5/figures/PN_Switc
-h_Lin.jpg> <./5/figures/PN_Cov_Lin.jpg>] [49 <./5/figures/PN_Lin_Gauss.jpg> <./
-5/figures/PN_Noise_Gauss.jpg> <./5/figures/PN_Bayess_Gauss.jpg> <./5/figures/PN
-_Move_Gauss.jpg> <./5/figures/PN_Switch_Gauss.jpg> <./5/figures/PN_Cov_Gauss.jp
-g>] [50 <./5/figures/adas.jpg> <./5/figures/adaab.jpg> <./5/figures/odas.jpg>]
+ [58]) [59] [60 <./5/figures/PN_Lin_Lin.jpg> <./5/figures/PN_Noise_Lin.jpg> <./
+5/figures/PN_Bayess_Lin.jpg> <./5/figures/PN_Move_Lin.jpg> <./5/figures/PN_Swit
+ch_Lin.jpg> <./5/figures/PN_Cov_Lin.jpg>] [61 <./5/figures/PN_Lin_Gauss.jpg> <.
+/5/figures/PN_Noise_Gauss.jpg> <./5/figures/PN_Bayess_Gauss.jpg> <./5/figures/P
+N_Move_Gauss.jpg> <./5/figures/PN_Switch_Gauss.jpg> <./5/figures/PN_Cov_Gauss.j
+pg>] [62 <./5/figures/adas.jpg> <./5/figures/adaab.jpg> <./5/figures/odas.jpg>]
 \openout2 = `6/Conclusion.aux'.
 
-
-(./6/Conclusion.tex
+ (./6/Conclusion.tex
  6.
-) [51
+) [63
 
 
 
-] [52] (./thesis.bbl (./thesis.brf)
+] [64] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write9
 \openout9 = `thesis.brf'.
 
@@ -1044,32 +1200,35 @@ Underfull \hbox (badness 5924) in paragraph at lines 83--83
 \OT1/cmr/m/it/6 SVM-Light Sup-port Vec-tor Ma-chine http://svmlight.
  []
 
-) [53
+[65
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+Missing character: There is no … in font cmcsc10!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+ [66]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./thesis.aux (./0_frontmatter/abstract.aux)
 (./0_frontmatter/acknowledgement.aux) (./0_frontmatter/glossary.aux)
 (./1_introduction/introduction.aux) (./2/related.aux) (./3/ourMethod.aux)
 (./4/tracking.aux) (./5/evaluation.aux) (./6/Conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F31E7FEC494B6E582B6921932B33C443;4437.
+(rerunfilecheck)             Checksum: 2830D4206B6A618EEECBBFB1B46609B2;5216.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 20D6EFCFFD57F7553D39D0FBF5DDB390;2885.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
+(rerunfilecheck)             Checksum: 6CBEAB6EEB85084ED246CD9DC72BADFD;3268.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 9737 strings out of 493633
- 143444 string characters out of 3143378
- 266255 words of memory out of 3000000
- 12512 multiletter control sequences out of 15000+200000
+ 9981 strings out of 493633
+ 147070 string characters out of 3143378
+ 266393 words of memory out of 3000000
+ 12681 multiletter control sequences out of 15000+200000
  17993 words of font info for 70 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 43i,13n,46p,1260b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,14n,50p,1638b,715s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></
@@ -1092,10 +1251,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on thesis.pdf (69 pages, 2290693 bytes).
+Output written on thesis.pdf (82 pages, 3327908 bytes).
 PDF statistics:
- 1063 PDF objects out of 1200 (max. 8388607)
- 922 compressed objects within 10 object streams
- 231 named destinations out of 1000 (max. 500000)
- 639 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1335 PDF objects out of 1440 (max. 8388607)
+ 1138 compressed objects within 12 object streams
+ 286 named destinations out of 1000 (max. 500000)
+ 786 words of extra memory for PDF output out of 10000 (max. 10000000)
 
